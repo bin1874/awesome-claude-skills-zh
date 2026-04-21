@@ -1,11 +1,72 @@
 title: Awesome Claude Skills 中文版
-description: 精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力
+description: 精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力。A curated list of practical Claude Skills to boost productivity.
 theme: jekyll-theme-cayman
 show_downloads: true
-google_analytics: 
 lang: zh-CN
+author: LessUp
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 plugins:
+  - jekyll-readme-index
   - jekyll-relative-links
+  - jekyll-seo-plugin
+  - jekyll-sitemap
+
+readme_index:
+  enabled: true
+  remove_original: true
+
 relative_links:
   enabled: true
   collections: true
+
+# SEO settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://github.com/user-attachments/assets/e91255af-e4ba-4d71-b1a8-bd081e8a234a
+
+# Exclude skill directories from Jekyll build (they're not needed for the site)
+exclude:
+  - "*/SKILL.md"
+  - "composio-skills/"
+  - "artifacts-builder/"
+  - "brand-guidelines/"
+  - "canvas-design/"
+  - "changelog-generator/"
+  - "competitive-ads-extractor/"
+  - "connect/"
+  - "connect-apps/"
+  - "connect-apps-plugin/"
+  - "content-research-writer/"
+  - "developer-growth-analysis/"
+  - "document-skills/"
+  - "domain-name-brainstormer/"
+  - "file-organizer/"
+  - "image-enhancer/"
+  - "internal-comms/"
+  - "invoice-organizer/"
+  - "langsmith-fetch/"
+  - "lead-research-assistant/"
+  - "mcp-builder/"
+  - "meeting-insights-analyzer/"
+  - "raffle-winner-picker/"
+  - "skill-creator/"
+  - "skill-share/"
+  - "slack-gif-creator/"
+  - "tailored-resume-generator/"
+  - "template-skill/"
+  - "theme-factory/"
+  - "twitter-algorithm-optimizer/"
+  - "video-downloader/"
+  - "webapp-testing/"
+  - "CONTRIBUTING.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules/"
+  - "vendor/"
