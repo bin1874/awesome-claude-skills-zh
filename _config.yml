@@ -1,0 +1,11 @@
+title: Awesome Claude Skills 中文版
+description: 精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力
+theme: jekyll-theme-cayman
+show_downloads: true
+google_analytics: 
+lang: zh-CN
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
