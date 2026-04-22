@@ -1,0 +1,77 @@
+// ============================================
+// Awesome Claude Skills - Custom Color Scheme
+// Anthropic-inspired professional theme
+// ============================================
+
+// Brand Colors - Anthropic-inspired
+$primary-color: #D97757;  // Anthropic Orange/Coral
+$secondary-color: #1F1F1F;  // Near Black
+$accent-color: #C9705C;  // Darker Coral
+
+// Text Colors
+$body-text-color: #1F2937;
+$body-heading-color: #111827;
+$link-color: #D97757;
+$link-hover-color: #BF5E46;
+$nav-child-link-color: #6B7280;
+$text-grey-dk: #374151;
+$text-grey-lt: #9CA3AF;
+
+// Background Colors
+$body-background-color: #FAFAFA;
+$sidebar-color: #FFFFFF;
+$code-background-color: #F3F4F6;
+$table-background-color: #FFFFFF;
+$search-background-color: #FFFFFF;
+$border-color: #E5E7EB;
+
+// Button Colors
+$btn-primary-color: #D97757;
+$btn-primary-hover: #BF5E46;
+$btn-secondary-color: #F3F4F6;
+$btn-secondary-hover: #E5E7EB;
+
+// Feedback Colors
+$red-000: #FEE2E2;
+$red-100: #FECACA;
+$red-200: #EF4444;
+$green-000: #D1FAE5;
+$green-100: #A7F3D0;
+$green-200: #10B981;
+$yellow-000: #FEF3C7;
+$yellow-100: #FDE68A;
+$yellow-200: #F59E0B;
+$blue-000: #DBEAFE;
+$blue-100: #BFDBFE;
+$blue-200: #3B82F6;
+$purple-000: #F3E8FF;
+$purple-100: #E9D5FF;
+$purple-200: #8B5CF6;
+
+// Font Settings
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+$mono-font-family: "SF Mono", Monaco, Inconsolata, "Fira Code", "Noto Sans SC", monospace;
+$root-font-size: 16px;
+$body-line-height: 1.7;
+$content-line-height: 1.8;
+
+// Spacing
+$spacing-unit: 1rem;
+$content-width: 900px;
+$sidebar-width: 280px;
+
+// Border Radius
+$border-radius: 8px;
+$btn-border-radius: 6px;
+$search-border-radius: 20px;
+
+// Cards
+$card-background: #FFFFFF;
+$card-border: 1px solid #E5E7EB;
+$card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+$card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+$card-radius: 12px;
+
+// Gradients
+$hero-gradient: linear-gradient(135deg, #FEF7F5 0%, #FDF2EF 50%, #FDF8F6 100%);
+$card-gradient: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);

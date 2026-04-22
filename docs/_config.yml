@@ -1,0 +1,142 @@
+# Site Configuration
+title: "Awesome Claude Skills 中文版"
+description: "精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力"
+author: "LessUp"
+lang: "zh-CN"
+
+# GitHub Pages URL Configuration
+# 请根据实际部署的域名修改
+url: "https://lessup.github.io"
+baseurl: "/awesome-claude-skills-zh"
+
+# Theme Configuration - Using Just the Docs
+remote_theme: just-the-docs/just-the-docs@v0.9.0
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+
+# Plugins (GitHub Pages supported only)
+plugins:
+  - jekyll-default-layout
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+# Color Scheme - Custom Anthropic-inspired theme
+color_scheme: custom
+
+# Navigation Configuration
+nav_external_links:
+  - title: "📂 GitHub 仓库"
+    url: "https://github.com/LessUp/awesome-claude-skills-zh"
+    hide_icon: false
+  - title: "🌐 原项目"
+    url: "https://github.com/ComposioQ/awesome-claude-skills"
+    hide_icon: false
+
+# Search Configuration
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Heading Anchors
+heading_anchors: true
+
+# Back to Top
+back_to_top: true
+back_to_top_text: "↑ 返回顶部"
+
+# Footer Content
+footer_content: |
+  <div class="footer-content">
+    <p>
+      <strong>Awesome Claude Skills 中文版</strong><br>
+      由 <a href="https://github.com/LessUp">LessUp</a> 维护<br>
+      采用 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> 许可证
+    </p>
+    <p class="footer-original">
+      原项目: <a href="https://github.com/ComposioQ/awesome-claude-skills">ComposioQ/awesome-claude-skills</a>
+    </p>
+  </div>
+
+# Aux Links (Upper Right Navigation)
+aux_links:
+  "GitHub":
+    - "https://github.com/LessUp/awesome-claude-skills-zh"
+
+aux_links_new_tab: true
+
+# Callouts Configuration
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: 重要
+    color: blue
+  new:
+    title: 新增
+    color: green
+  note:
+    title: 注意
+    color: purple
+  warning:
+    title: 警告
+    color: red
+  tip:
+    title: 提示
+    color: green
+
+# Collections (if needed for future skill detail pages)
+collections:
+  skills:
+    permalink: "/:collection/:name"
+    output: true
+
+# Default Layouts
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: "assets"
+    values:
+      layout: none
+
+# Exclude from Build
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+  - "*.gem"
+  - "*.gemspec"
+  - ".gitignore"
+  - ".travis.yml"
+  - "LICENSE"
+  - "CONTRIBUTING.md"
+  - "README.md"
+  - "*.sh"
+
+# Sass/SCSS Settings
+sass:
+  style: compressed
+
+# Liquid Settings
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
