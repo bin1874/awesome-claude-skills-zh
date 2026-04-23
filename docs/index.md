@@ -39,7 +39,7 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准化的方
 
 <div class="stats">
   <div class="stat-item">
-    <div class="stat-number">70+</div>
+    <div class="stat-number">30+</div>
     <div class="stat-label">精选技能</div>
   </div>
   <div class="stat-item">

@@ -1,3 +1,8 @@
+---
+name: document-skills
+description: Anthropic 官方文档处理技能的中文翻译版本，包含 Word、PDF、PowerPoint、Excel 文档的创建、编辑和分析能力。
+---
+
 # 文档技能
 
 此目录包含 Anthropic 官方文档处理技能的中文翻译版本。这些技能来自 [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)。

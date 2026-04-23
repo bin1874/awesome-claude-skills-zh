@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath // empty' | { read -r f; if [[ \"$f\" == */SKILL.md ]]; then if ! grep -q '^name:' \"$f\" 2>/dev/null; then echo \"Missing frontmatter: $f\"; fi; fi; }",
+            "timeout": 10,
+            "statusMessage": "Validating SKILL.md..."
+          }
+        ]
+      }
+    ]
+  }
+}
