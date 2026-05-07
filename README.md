@@ -1,4 +1,4 @@
-<h1 align="center">Awesome Claude Skills</h1>
+<h1 align="center">Awesome Claude Skills（中文版）</h1>
 
 <p align="center">
 <a href="https://dashboard.composio.dev/login?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
@@ -33,77 +33,82 @@
   </p>
 </div>
 
-A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Cursor, Gemini CLI, Antigravity and more.
+精选的 1000+ 生产级 Claude Skills 和插件列表，用于提升 Claude.ai、Claude Code、Claude API 以及 Codex、Cursor、Gemini CLI、Antigravity 等编程智能体的生产力。
+
+> 📖 本项目是 [awesome-claude-skills](https://github.com/composiohq/awesome-claude-skills) 的中文翻译版本，最后同步于 2026年5月
+>
+> 💡 中文版 GitHub Pages 站点：[https://lessup.github.io/awesome-claude-skills-zh](https://lessup.github.io/awesome-claude-skills-zh)
 
 
-> **Want skills that do more than generate text?** Claude can send emails, create issues, post to Slack, and take actions across 1000+ apps. [See how →](./connect/)
+> **需要超越文本生成的技能？** Claude 可以发送邮件、创建 Issue、发布到 Slack，并在 1000+ 应用中执行真实操作。[了解如何使用 →](./connect/)
 
 ---
 
-## Quickstart: Connect Claude to 500+ Apps
+## 快速开始：将 Claude 连接到 500+ 应用
 
-The **connect-apps** plugin lets Claude perform real actions - send emails, create issues, post to Slack. It handles auth and connects to 500+ apps using Composio under the hood.
+**connect-apps** 插件让 Claude 执行真实操作 - 发送邮件、创建 Issue、发布到 Slack。它在底层使用 Composio 处理认证并连接到 500+ 应用。
 
-### 1. Install the Plugin
+### 1. 安装插件
 
 ```bash
 claude --plugin-dir ./connect-apps-plugin
 ```
 
-### 2. Run Setup
+### 2. 运行设置
 
 ```
 /connect-apps:setup
 ```
 
-Paste your API key when asked. (Get a free key at [dashboard.composio.dev](https://dashboard.composio.dev/login?utm_source=Github&utm_content=AwesomeSkills))
+在询问时粘贴你的 API 密钥。（在 [dashboard.composio.dev](https://dashboard.composio.dev/login?utm_source=Github&utm_content=AwesomeSkills) 获取免费密钥）
 
-### 3. Restart & Try It
+### 3. 重启并试用
 
 ```bash
 exit
 claude
 ```
 
-> **Want skills that do more than generate text?** Claude can send emails, create issues, post to Slack, and take actions across 1000+ apps. [See how →](./connect/)
+> **需要超越文本生成的技能？** Claude 可以发送邮件、创建 Issue、发布到 Slack，并在 1000+ 应用中执行真实操作。[了解如何使用 →](./connect/)
 
-If you receive the email, Claude is now connected to 500+ apps.
+如果收到邮件，说明 Claude 已连接到 500+ 应用。
 
-**[See all supported apps →](https://composio.dev/toolkits)**
+**[查看所有支持的应用 →](https://composio.dev/toolkits)**
 
 ---
 
-## Contents
+## 目录
 
-- [What Are Claude Skills?](#what-are-claude-skills)
-- [Skills](#skills)
-  - [Document Processing](#document-processing)
-  - [Development & Code Tools](#development--code-tools)
-  - [Data & Analysis](#data--analysis)
-  - [Business & Marketing](#business--marketing)
-  - [Communication & Writing](#communication--writing)
-  - [Creative & Media](#creative--media)
-  - [Productivity & Organization](#productivity--organization)
-  - [Collaboration & Project Management](#collaboration--project-management)
-  - [Security & Systems](#security--systems)
-  - [App Automation via Composio](#app-automation-via-composio)
-- [Getting Started](#getting-started)
-- [Creating Skills](#creating-skills)
-- [Contributing](#contributing)
-- [Resources](#resources)
-- [License](#license)
+- [什么是 Claude Skills？](#什么是-claude-skills)
+- [技能列表](#技能列表)
+  - [文档处理](#文档处理)
+  - [开发与代码工具](#开发与代码工具)
+  - [数据与分析](#数据与分析)
+  - [商业与营销](#商业与营销)
+  - [沟通与写作](#沟通与写作)
+  - [创意与媒体](#创意与媒体)
+  - [生产力与组织](#生产力与组织)
+  - [协作与项目管理](#协作与项目管理)
+  - [安全与系统](#安全与系统)
+  - [辅助技术](#辅助技术)
+  - [通过 Composio 的应用自动化](#通过-composio-的应用自动化)
+- [入门指南](#入门指南)
+- [创建技能](#创建技能)
+- [贡献指南](#贡献指南)
+- [资源](#资源)
+- [许可证](#许可证)
 
-## What Are Claude Skills?
+## 什么是 Claude Skills？
 
-Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Cursor, Gemini CLI, Antigravity, and Windsurf.
+Claude Skills 是可重用的指令包，教会 AI 智能体如何处理特定类型的任务。每个 skill 是一个包含 `SKILL.md` 文件的文件夹，其中包含 YAML frontmatter（名称、描述）和 Markdown 指令，可选地附带脚本、参考文档和资源文件。Anthropic 于 2025 年 10 月推出了该格式，并于 2025 年 12 月将其作为[开放标准](https://github.com/anthropics/skills)发布；现在已支持 Claude Code、Claude.ai、Claude API、OpenAI Codex、Cursor、Gemini CLI、Antigravity 和 Windsurf。
 
-Skills load progressively. At session start, the agent sees only each skill's name and description — roughly 100 tokens per skill. The full SKILL.md body (typically under 5,000 tokens) loads only when the agent decides the skill is relevant to the current task. Auxiliary files in `scripts/` and `references/` load on demand. This is what lets a single agent host hundreds of skills without bloating its context window.
+Skills 采用渐进式加载。在会话开始时，智能体只看到每个 skill 的名称和描述 —— 每个 skill 大约 100 个 token。完整的 SKILL.md 主体（通常在 5,000 个 token 以下）仅在智能体认为该 skill 与当前任务相关时才加载。`scripts/` 和 `references/` 中的辅助文件按需加载。这就是让单个智能体托管数百个 skills 而不会使其上下文窗口膨胀的原因。
 
-Skills are not MCP servers and not tools. MCP defines how an agent connects to external systems — auth, transport, tool discovery. Tools are the individual functions an agent invokes. Skills define the workflow — what to do, in what order, with what guardrails — once the agent has the connections and tools it needs. In production, all three layers run together: MCP for access, tools for actions, skills for behavior.
+Skills 不是 MCP 服务器，也不是工具。MCP 定义智能体如何连接到外部系统 —— 认证、传输、工具发现。工具是智能体调用的单个函数。Skills 定义工作流程 —— 做什么、按什么顺序、使用什么约束 —— 一旦智能体拥有所需的连接和工具。在生产环境中，这三层一起运行：MCP 用于访问，工具用于操作，skills 用于行为。
 
-## Skills
+## 技能列表
 
-### Document Processing
+### 文档处理
 
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
@@ -112,7 +117,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Markdown to EPUB Converter](https://github.com/smerchek/claude-epub-skill) - Converts markdown documents and chat summaries into professional EPUB ebook files. *By [@smerchek](https://github.com/smerchek)*
 - [Master Claude for Legal](https://github.com/sboghossian/master-claude-for-legal) - Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By [@sboghossian](https://github.com/sboghossian)*
 
-### Development & Code Tools
+### 开发与代码工具
 
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
@@ -145,7 +150,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
-### Data & Analysis
+### 数据与分析
 
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -153,7 +158,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
 
-### Business & Marketing
+### 商业与营销
 
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
@@ -162,7 +167,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
 
-### Communication & Writing
+### 沟通与写作
 
 - [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
 - [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
@@ -172,7 +177,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
 - [Twitter Algorithm Optimizer](./twitter-algorithm-optimizer/) - Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.
 
-### Creative & Media
+### 创意与媒体
 
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -184,7 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [swiftui-design-skill](https://github.com/wholiver/swiftui-design-skill) - SwiftUI 前端设计 skill — 反 AI Slop 六条铁律、设计方向顾问、品牌资产协议、五维评审。支持 Claude Code / Cursor / Codex / OpenCode 等全部 AI agent 平台。 *By [@wholiver](https://github.com/wholiver)*
 - [Pixelbin-Media-Generation](https://github.com/anandpareek-hub/pixelbin-claude-skill) - Generate and edit images & videos with 85+ API portfolio and build visually appealing website pages
 
-### Productivity & Organization
+### 生产力与组织
 
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
@@ -196,7 +201,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
 
-### Collaboration & Project Management
+### 协作与项目管理
 
 - [git-pushing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing) - Automate git operations and repository interactions.
 - [google-workspace-skills](https://github.com/sanjay3290/ai-skills/tree/main/skills) - Suite of Google Workspace integrations: Gmail, Calendar, Chat, Docs, Sheets, Slides, and Drive with cross-platform OAuth. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -204,18 +209,18 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [review-implementing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/review-implementing) - Evaluate code implementation plans and align with specs.
 - [test-fixing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing) - Detect failing tests and propose patches or fixes.
 
-### Security & Systems
+### 安全与系统
 
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
-### Assistive Technology
+### 辅助技术
 
 - [ASD-AuDHD-PAI-Skills](https://github.com/emory/ASD-AuDHD-PAI-Skills) - New collection, first skill [pda-reframing](https://github.com/emory/ASD-AuDHD-PAI-Skills/blob/main/Skills/pda-reframing/SKILL.md) can reframe requests or decisions to defeat Persistent Demand Avoidance flavors of autism spectrum disorders, or people with ADHD that struggle to Start tasks and need help aligning with a task.
 
-### App Automation via Composio
+### 通过 Composio 的应用自动化
 
 Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://composio.dev). Each skill includes tool sequences, parameter guidance, known pitfalls, and quick reference tables — all using real tool slugs discovered from Composio's API.
 
@@ -331,37 +336,37 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 **Zoom & Meetings**
 - [Zoom Automation](./zoom-automation/) - Automate Zoom: meetings, recordings, participants, webinars, and reports.
 
-## Getting Started
+## 入门指南
 
-### Using Skills in Claude.ai
+### 在 Claude.ai 中使用技能
 
-1. Click the skill icon (🧩) in your chat interface.
-2. Add skills from the marketplace or upload custom skills.
-3. Claude automatically activates relevant skills based on your task.
+1. 在聊天界面中点击技能图标（🧩）。
+2. 从市场添加技能或上传自定义技能。
+3. Claude 会根据你的任务自动激活相关技能。
 
-### Using Skills in Claude Code
+### 在 Claude Code 中使用技能
 
-1. Place the skill in `~/.config/claude-code/skills/`:
+1. 将技能放在 `~/.config/claude-code/skills/`：
    ```bash
    mkdir -p ~/.config/claude-code/skills/
    cp -r skill-name ~/.config/claude-code/skills/
    ```
 
-2. Verify skill metadata:
+2. 验证技能元数据：
    ```bash
    head ~/.config/claude-code/skills/skill-name/SKILL.md
    ```
 
-3. Start Claude Code:
+3. 启动 Claude Code：
    ```bash
    claude
    ```
 
-4. The skill loads automatically and activates when relevant.
+4. 技能会自动加载并在相关时激活。
 
-### Using Skills via API
+### 通过 API 使用技能
 
-Use the Claude Skills API to programmatically load and manage skills:
+使用 Claude Skills API 以编程方式加载和管理技能：
 
 ```python
 import anthropic
@@ -375,108 +380,108 @@ response = client.messages.create(
 )
 ```
 
-See the [Skills API documentation](https://docs.claude.com/en/api/skills-guide) for details.
+参见 [Skills API 文档](https://docs.claude.com/en/api/skills-guide) 了解详情。
 
-## Creating Skills
+## 创建技能
 
-### Skill Structure
+### 技能结构
 
-Each skill is a folder containing a `SKILL.md` file with YAML frontmatter:
+每个技能是一个包含带有 YAML frontmatter 的 `SKILL.md` 文件的文件夹：
 
 ```
 skill-name/
-├── SKILL.md          # Required: Skill instructions and metadata
-├── scripts/          # Optional: Helper scripts
-├── templates/        # Optional: Document templates
-└── resources/        # Optional: Reference files
+├── SKILL.md          # 必需：技能说明和元数据
+├── scripts/          # 可选：辅助脚本
+├── templates/        # 可选：文档模板
+└── resources/        # 可选：参考文件
 ```
 
-### Basic Skill Template
+### 基础技能模板
 
 ```markdown
 ---
 name: my-skill-name
-description: A clear description of what this skill does and when to use it.
+description: 对此技能功能和使用时机的清晰描述。
 ---
 
 # My Skill Name
 
-Detailed description of the skill's purpose and capabilities.
+技能用途和功能的详细描述。
 
-## When to Use This Skill
+## 何时使用此技能
 
-- Use case 1
-- Use case 2
-- Use case 3
+- 使用场景 1
+- 使用场景 2
+- 使用场景 3
 
-## Instructions
+## 指令
 
-[Detailed instructions for Claude on how to execute this skill]
+[Claude 如何执行此技能的详细说明]
 
-## Examples
+## 示例
 
-[Real-world examples showing the skill in action]
+[展示技能实际应用的示例]
 ```
 
-### Skill Best Practices
+### 技能最佳实践
 
-- Focus on specific, repeatable tasks
-- Include clear examples and edge cases
-- Write instructions for Claude, not end users
-- Test across Claude.ai, Claude Code, and API
-- Document prerequisites and dependencies
-- Include error handling guidance
+- 专注于特定的、可重复的任务
+- 包含清晰的示例和边缘情况
+- 为 Claude 编写指令，而不是最终用户
+- 跨 Claude.ai、Claude Code 和 API 进行测试
+- 记录先决条件和依赖关系
+- 包含错误处理指南
 
-## Contributing
+## 贡献指南
 
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+我们欢迎贡献！请阅读我们的[贡献指南](CONTRIBUTING.md)了解以下详情：
 
-- How to submit new skills
-- Skill quality standards
-- Pull request process
-- Code of conduct
+- 如何提交新技能
+- 技能质量标准
+- Pull Request 流程
+- 行为准则
 
-### Quick Contribution Steps
+### 快速贡献步骤
 
-1. Ensure your skill is based on a real use case
-2. Check for duplicates in existing skills
-3. Follow the skill structure template
-4. Test your skill across platforms
-5. Submit a pull request with clear documentation
+1. 确保你的技能基于真实用例
+2. 检查现有技能中是否有重复
+3. 遵循技能结构模板
+4. 跨平台测试你的技能
+5. 提交带有清晰文档的 pull request
 
-## Resources
+## 资源
 
-### Official Documentation
+### 官方文档
 
-- [Claude Skills Overview](https://www.anthropic.com/news/skills) - Official announcement and features
-- [Skills User Guide](https://support.claude.com/en/articles/12512180-using-skills-in-claude) - How to use skills in Claude
-- [Creating Custom Skills](https://support.claude.com/en/articles/12512198-creating-custom-skills) - Skill development guide
-- [Skills API Documentation](https://docs.claude.com/en/api/skills-guide) - API integration guide
-- [Agent Skills Blog Post](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) - Engineering deep dive
+- [Claude Skills 概述](https://www.anthropic.com/news/skills) - 官方公告和功能
+- [Skills 用户指南](https://support.claude.com/en/articles/12512180-using-skills-in-claude) - 如何在 Claude 中使用技能
+- [创建自定义技能](https://support.claude.com/en/articles/12512198-creating-custom-skills) - 技能开发指南
+- [Skills API 文档](https://docs.claude.com/en/api/skills-guide) - API 集成指南
+- [Agent Skills 博客文章](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) - 工程深入探讨
 
-### Community Resources
+### 社区资源
 
-- [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
-- [Claude Community](https://community.anthropic.com) - Discuss skills with other users
-- [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [Anthropic Skills 仓库](https://github.com/anthropics/skills) - 官方示例技能
+- [Claude 社区](https://community.anthropic.com) - 与其他用户讨论技能
+- [Skills 市场](https://claude.ai/marketplace) - 发现和分享技能
 
-### Inspiration & Use Cases
+### 灵感与用例
 
-- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use Claude Code
-- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
+- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 人们使用 Claude Code 的 50 种方式
+- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion 集成技能
 - [Top Claude Skills](https://composio.dev/content/top-claude-skills)
 
 
-## Join the Community
+## 加入社区
 
-- [Join our Discord](https://discord.com/invite/composio) - Chat with other developers building Claude Skills
-- [Follow on Twitter/X](https://x.com/composio) - Stay updated on new skills and features
-- Questions? [support@composio.dev](mailto:support@composio.dev)
+- [加入我们的 Discord](https://discord.com/invite/composio) - 与其他构建 Claude Skills 的开发者聊天
+- [在 Twitter/X 上关注我们](https://x.com/composio) - 了解新技能和功能的最新动态
+- 有问题？[support@composio.dev](mailto:support@composio.dev)
 
 ---
 
 <p align="center">
-  <b>Join 20,000+ developers building agents that ship</b>
+  <b>加入 20,000+ 构建可交付智能体的开发者</b>
 </p>
 
 <p align="center">
@@ -485,14 +490,14 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
   </a>
 </p>
 
-## License
+## 许可证
 
-This repository is licensed under the Apache License 2.0.
+本仓库采用 Apache License 2.0 许可证。
 
-Individual skills may have different licenses - please check each skill's folder for specific licensing information.
+个别技能可能有不同的许可证 - 请查看每个技能文件夹以获取具体的许可信息。
 
 ---
 
-**Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
+**注意**：Claude Skills 可在 Claude.ai、Claude Code 和 Claude API 中使用。一旦创建了技能，它就可以在所有平台间移植，使你的工作流程在你使用 Claude 的任何地方保持一致。
 
-- [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
+- [AgentsKB](https://agentskb.com) - 用经过研究的答案升级你的 AI。我们已完成研究，让你的 AI 第一次就能做对。
