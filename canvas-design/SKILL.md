@@ -1,47 +1,47 @@
 ---
 name: canvas-design
-description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.
-license: Complete terms in LICENSE.txt
+description: 使用设计理念在 .png 和 .pdf 文档中创建精美的视觉艺术。当用户要求创建海报、艺术作品、设计或其他静态作品时应使用此技能。创建原创视觉设计，切勿抄袭现有艺术家的作品以避免版权侵犯。
+license: 完整条款见 LICENSE.txt
 ---
 
-These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.
+这些是创建设计理念的说明 - 审美运动，然后以视觉方式表达。仅输出 .md 文件、.pdf 文件和 .png 文件。
 
-Complete this in two steps:
-1. Design Philosophy Creation (.md file)
-2. Express by creating it on a canvas (.pdf file or .png file)
+分两步完成：
+1. 设计理念创建（.md 文件）
+2. 通过在画布上创建来表达（.pdf 文件或 .png 文件）
 
-First, undertake this task:
+首先，执行此任务：
 
-## DESIGN PHILOSOPHY CREATION
+## 设计理念创建
 
-To begin, create a VISUAL PHILOSOPHY (not layouts or templates) that will be interpreted through:
-- Form, space, color, composition
-- Images, graphics, shapes, patterns
-- Minimal text as visual accent
+首先，创建一个视觉理念（不是布局或模板），将通过以下方式诠释：
+- 形式、空间、颜色、构图
+- 图像、图形、形状、图案
+- 最小文本作为视觉点缀
 
-### THE CRITICAL UNDERSTANDING
-- What is received: Some subtle input or instructions by the user that should be taken into account, but used as a foundation; it should not constrain creative freedom.
-- What is created: A design philosophy/aesthetic movement.
-- What happens next: Then, the same version receives the philosophy and EXPRESSES IT VISUALLY - creating artifacts that are 90% visual design, 10% essential text.
+### 关键理解
+- 接收内容：用户的一些微妙输入或指令应被考虑，但作为基础使用；不应限制创作自由。
+- 创建内容：设计理念/审美运动。
+- 接下来：然后，同一版本接收理念并以视觉方式表达 - 创建 90% 视觉设计、10% 必要文本的 artifacts。
 
-Consider this approach:
-- Write a manifesto for an art movement
-- The next phase involves making the artwork
+考虑这种方法：
+- 为艺术运动撰写宣言
+- 下一阶段涉及制作艺术品
 
-The philosophy must emphasize: Visual expression. Spatial communication. Artistic interpretation. Minimal words.
+理念必须强调：视觉表达。空间沟通。艺术诠释。极简文字。
 
-### HOW TO GENERATE A VISUAL PHILOSOPHY
+### 如何生成视觉理念
 
-**Name the movement** (1-2 words): "Brutalist Joy" / "Chromatic Silence" / "Metabolist Dreams"
+**为运动命名**（1-2 个词）："Brutalist Joy" / "Chromatic Silence" / "Metabolist Dreams"
 
-**Articulate the philosophy** (4-6 paragraphs - concise but complete):
+**阐述理念**（4-6 段 - 简洁但完整）：
 
-To capture the VISUAL essence, express how the philosophy manifests through:
-- Space and form
-- Color and material
-- Scale and rhythm
-- Composition and balance
-- Visual hierarchy
+为了捕捉视觉本质，表达理念如何通过以下方式体现：
+- 空间和形式
+- 颜色和材料
+- 比例和节奏
+- 构图和平衡
+- 视觉层次
 
 **CRITICAL GUIDELINES:**
 - **Avoid redundancy**: Each design aspect should be mentioned once. Avoid repeating points about color theory, spatial relationships, or typographic principles unless adding new depth.

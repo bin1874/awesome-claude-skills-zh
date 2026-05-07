@@ -1,104 +1,101 @@
 ---
 name: changelog-generator
-description: Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation.
+description: 通过分析提交历史、分类更改并将技术性提交转换为清晰、客户友好的发布说明，自动从 git 提交创建面向用户的变更日志。将数小时的手动变更日志编写转化为几分钟的自动生成。
 ---
 
 # Changelog Generator
 
-This skill transforms technical git commits into polished, user-friendly changelogs that your customers and users will actually understand and appreciate.
+此技能将技术性 git 提交转换为精心制作的、用户友好的变更日志，让你的客户和用户能够真正理解并感激。
 
-## When to Use This Skill
+## 何时使用此技能
 
-- Preparing release notes for a new version
-- Creating weekly or monthly product update summaries
-- Documenting changes for customers
-- Writing changelog entries for app store submissions
-- Generating update notifications
-- Creating internal release documentation
-- Maintaining a public changelog/product updates page
+- 为新版本准备发布说明
+- 创建每周或每月产品更新摘要
+- 为客户记录更改
+- 为应用商店提交编写变更日志条目
+- 生成更新通知
+- 创建内部发布文档
+- 维护公共变更日志/产品更新页面
 
-## What This Skill Does
+## 此技能的功能
 
-1. **Scans Git History**: Analyzes commits from a specific time period or between versions
-2. **Categorizes Changes**: Groups commits into logical categories (features, improvements, bug fixes, breaking changes, security)
-3. **Translates Technical → User-Friendly**: Converts developer commits into customer language
-4. **Formats Professionally**: Creates clean, structured changelog entries
-5. **Filters Noise**: Excludes internal commits (refactoring, tests, etc.)
-6. **Follows Best Practices**: Applies changelog guidelines and your brand voice
+1. **扫描 Git 历史**：分析特定时间段或版本之间的提交
+2. **分类更改**：将提交分组到逻辑类别（功能、改进、错误修复、破坏性更改、安全）
+3. **技术 → 用户友好转换**：将开发人员提交转换为客户语言
+4. **专业格式化**：创建清晰、结构化的变更日志条目
+5. **过滤噪音**：排除内部提交（重构、测试等）
+6. **遵循最佳实践**：应用变更日志指南和你的品牌语调
 
-## How to Use
+## 如何使用
 
-### Basic Usage
+### 基本用法
 
-From your project repository:
-
-```
-Create a changelog from commits since last release
-```
+从你的项目仓库：
 
 ```
-Generate changelog for all commits from the past week
+自上次发布以来创建提交的变更日志
 ```
 
 ```
-Create release notes for version 2.5.0
+为过去一周的所有提交生成变更日志
 ```
 
-### With Specific Date Range
-
 ```
-Create a changelog for all commits between March 1 and March 15
+为版本 2.5.0 创建发布说明
 ```
 
-### With Custom Guidelines
+### 使用特定日期范围
 
 ```
-Create a changelog for commits since v2.4.0, using my changelog 
-guidelines from CHANGELOG_STYLE.md
+为 3 月 1 日至 3 月 15 日之间的所有提交创建变更日志
 ```
 
-## Example
+### 使用自定义指南
 
-**User**: "Create a changelog for commits from the past 7 days"
+```
+为自 v2.4.0 以来的提交创建变更日志，使用 CHANGELOG_STYLE.md 中的变更日志指南
+```
 
-**Output**:
+## 示例
+
+**用户**："为过去 7 天的提交创建变更日志"
+
+**输出**：
 ```markdown
-# Updates - Week of March 10, 2024
+# 更新 - 2024 年 3 月 10 日这一周
 
-## ✨ New Features
+## ✨ 新功能
 
-- **Team Workspaces**: Create separate workspaces for different 
-  projects. Invite team members and keep everything organized.
+- **团队工作区**：为不同项目创建独立的工作区。邀请团队成员并保持一切井井有条。
 
-- **Keyboard Shortcuts**: Press ? to see all available shortcuts. 
-  Navigate faster without touching your mouse.
+- **键盘快捷键**：按 ? 查看所有可用快捷键。无需鼠标即可更快导航。
 
-## 🔧 Improvements
+## 🔧 改进
 
-- **Faster Sync**: Files now sync 2x faster across devices
-- **Better Search**: Search now includes file contents, not just titles
+- **更快同步**：文件在设备间的同步速度现在提高 2 倍
+- **更好的搜索**：搜索现在包含文件内容，而不仅仅是标题
 
-## 🐛 Fixes
+## 🐛 修复
 
-- Fixed issue where large images wouldn't upload
-- Resolved timezone confusion in scheduled posts
-- Corrected notification badge count
+- 修复了大图像无法上传的问题
+- 解决了计划发布中的时区混乱
+- 更正了通知徽章计数
 ```
 
-**Inspired by:** Manik Aggarwal's use case from Lenny's Newsletter
+**灵感来源**：Lenny's Newsletter 中 Manik Aggarwal 的用例
 
-## Tips
+## 提示
 
-- Run from your git repository root
-- Specify date ranges for focused changelogs
-- Use your CHANGELOG_STYLE.md for consistent formatting
-- Review and adjust the generated changelog before publishing
-- Save output directly to CHANGELOG.md
+- 从 git 仓库根目录运行
+- 指定日期范围以获得聚焦的变更日志
+- 使用 CHANGELOG_STYLE.md 保持一致的格式
+- 发布前审查并调整生成的变更日志
+- 将输出直接保存到 CHANGELOG.md
 
-## Related Use Cases
+## 相关用例
 
-- Creating GitHub release notes
-- Writing app store update descriptions
-- Generating email updates for users
-- Creating social media announcement posts
+- 创建 GitHub 发布说明
+- 编写应用商店更新描述
+- 为用户生成邮件更新
+- 创建社交媒体公告帖子
 
