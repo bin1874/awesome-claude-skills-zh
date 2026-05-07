@@ -1,184 +1,185 @@
-# 贡献指南
+# Contributing to Awesome Claude Skills
 
-感谢你有兴趣为 Claude Skills 精选合集做出贡献！本指南将帮助你添加能让整个 Claude 社区受益的新技能。
+Thank you for your interest in contributing to the premier collection of Claude Skills! This guide will help you add new skills that benefit the entire Claude community.
 
-## 开始之前
+## Before You Start
 
-- 确保你的技能基于**真实用例**，而非假设场景。
-- 搜索现有技能以避免重复。
-- 如果可能，将用例归功于原始人员或来源。
+- Ensure your skill is based on a **real use case**, not a hypothetical scenario.
+- Search existing skills to avoid duplicates.
+- If possible, attribute the use case to the original person or source.
 
-## 技能要求
+## Skill Requirements
 
-所有技能必须：
+All skills must:
 
-1. **解决真实问题** - 基于实际使用，而非理论应用。
-2. **文档完善** - 包含清晰的说明、示例和用例。
-3. **易于理解** - 尽可能为非技术用户编写。
-4. **包含示例** - 展示实际的、现实世界的用法。
-5. **经过测试** - 验证技能在 Claude.ai、Claude Code 和/或 API 上有效。
-6. **安全可靠** - 在破坏性操作前确认。
-7. **可移植** - 在适用的 Claude 平台上工作。
+1. **Solve a real problem** - Based on actual usage, not theoretical applications.
+2. **Be well-documented** - Include clear instructions, examples, and use cases.
+3. **Be accessible** - Written for non-technical users when possible.
+4. **Include examples** - Show practical, real-world usage.
+5. **Be tested** - Verify the skill works across Claude.ai, Claude Code, and/or API.
+6. **Be safe** - Confirm before destructive operations.
+7. **Be portable** - Work across Claude platforms when applicable.
 
-## 技能结构
+## Skill Structure
 
-使用小写字母和连字符创建技能名称文件夹：
+Create a new folder with your skill name (use lowercase and hyphens):
 
 ```
 skill-name/
 └── SKILL.md
 ```
 
-## SKILL.md 模板
+## SKILL.md Template
 
-使用此模板编写你的技能：
+Use this template for your skill:
 
 ```markdown
 ---
 name: skill-name
-description: 一句话描述此技能的功能和使用时机。
+description: One-sentence description of what this skill does and when to use it.
 ---
 
 # Skill Name
 
-技能的详细描述及其帮助用户完成的任务。
+Detailed description of the skill and what it helps users accomplish.
 
-## 何时使用此技能
+## When to Use This Skill
 
-- 要点用例 1
-- 要点用例 2
-- 要点用例 3
+- Bullet point use case 1
+- Bullet point use case 2
+- Bullet point use case 3
 
-## 此技能的功能
+## What This Skill Does
 
-1. **能力 1**：描述
-2. **能力 2**：描述
-3. **能力 3**：描述
+1. **Capability 1**: Description
+2. **Capability 2**: Description
+3. **Capability 3**: Description
 
-## 如何使用
+## How to Use
 
-### 基本用法
-
-```
-简单示例提示
-```
-
-### 高级用法
+### Basic Usage
 
 ```
-带有选项的复杂示例提示
+Simple example prompt
 ```
 
-## 示例
+### Advanced Usage
 
-**用户**："示例提示"
-
-**输出**：
 ```
-展示技能产生的内容
+More complex example prompt with options
 ```
 
-**灵感来源：** [如有适用，归功于原始来源]
+## Example
 
-## 提示
+**User**: "Example prompt"
 
-- 提示 1
-- 提示 2
-- 提示 3
-
-## 常见用例
-
-- 用例 1
-- 用例 2
-- 用例 3
+**Output**:
+```
+Show what the skill produces
 ```
 
-## 将技能添加到 README
+**Inspired by:** [Attribution to original source, if applicable]
 
-1. 选择合适的类别：
-   - 商业与营销
-   - 沟通与写作
-   - 创意与媒体
-   - 开发
-   - 生产力与组织
+## Tips
 
-2. 在类别中按字母顺序添加你的技能：
+- Tip 1
+- Tip 2
+- Tip 3
+
+## Common Use Cases
+
+- Use case 1
+- Use case 2
+- Use case 3
+```
+
+## Adding Your Skill to README
+
+1. Choose the appropriate category:
+   - Business & Marketing
+   - Communication & Writing
+   - Creative & Media
+   - Development
+   - Productivity & Organization
+
+2. Add your skill in alphabetical order within the category:
 
 ```markdown
-- [Skill Name](./skill-name/) - 一句话描述。灵感来源 [Person/Source]。
+- [Skill Name](./skill-name/) - One-sentence description. Inspired by [Person/Source].
 ```
 
-3. 严格遵循现有格式 - 不使用表情符号，标点符号保持一致。
+3. Follow the existing format exactly - no emojis, consistent punctuation.
 
-## Pull Request 流程
+## Pull Request Process
 
-1. Fork 仓库
-2. 创建分支：`git checkout -b add-skill-name`
-3. 添加你的技能文件夹和 SKILL.md
-4. 在适当类别中更新 README.md
-5. 提交更改：`git commit -m "Add [Skill Name] skill"`
-6. 推送到你的 Fork：`git push origin add-skill-name`
-7. 打开 Pull Request
+1. Fork the repository
+2. Create a branch: `git checkout -b add-skill-name`
+3. Add your skill folder with SKILL.md
+4. Update README.md with your skill in the appropriate category
+5. Commit your changes: `git commit -m "Add [Skill Name] skill"`
+6. Push to your fork: `git push origin add-skill-name`
+7. Open a Pull Request
 
-## Pull Request 指南
+## Pull Request Guidelines
 
-你的 PR 应该：
+Your PR should:
 
-- **标题**："Add [Skill Name] skill"
-- **描述**：解释真实用例并包含：
-  - 解决什么问题
-  - 谁使用此工作流
-  - 归功/灵感来源
-  - 如何使用的示例
+- **Title**: "Add [Skill Name] skill"
+- **Description**: Explain the real-world use case and include:
+  - What problem it solves
+  - Who uses this workflow
+  - Attribution/inspiration source
+  - Example of how it's used
 
-## 行为准则
+## Code of Conduct
 
-- 保持尊重和建设性
-- 注明原始来源和灵感
-- 聚焦于实用的、有帮助的技能
-- 编写清晰、易懂的文档
-- 提交前测试你的技能
+- Be respectful and constructive
+- Credit original sources and inspirations
+- Focus on practical, helpful skills
+- Write clear, accessible documentation
+- Test your skills before submitting
 
-## 有问题？
+## Questions?
 
-如果对贡献有疑问或需要帮助构建技能，请提交 Issue。
+Open an issue if you have questions about contributing or need help structuring your skill.
 
-## 归功
+## Attribution
 
-当添加基于他人工作流或用例的技能时，请包含适当的归功：
+When adding a skill based on someone's workflow or use case, include proper attribution:
 
 ```markdown
-**灵感来源：** [Person Name] 的工作流
+**Inspired by:** [Person Name]'s workflow
 ```
 
-或
+or
 
 ```markdown
-**致谢：** 基于 [Company/Team] 的流程
+**Credit:** Based on [Company/Team]'s process
 ```
 
-示例：
-- **灵感来源：** Dan Shipper 的会议分析工作流
-- **灵感来源：** Teresa Torres 的内容研究流程
-- **致谢：** 基于 Notion 的文档工作流
+Examples:
+- **Inspired by:** Dan Shipper's meeting analysis workflow
+- **Inspired by:** Teresa Torres's content research process
+- **Credit:** Based on Notion's documentation workflow
 
-## 技能类别
+## Skill Categories
 
-### 商业与营销
-用于线索生成、竞争研究、品牌建设和业务发展的技能。
+### Business & Marketing
+Skills for lead generation, competitive research, branding, and business development.
 
-### 沟通与写作
-用于改善沟通、分析对话和创建内容的技能。
+### Communication & Writing
+Skills for improving communication, analyzing conversations, and creating content.
 
-### 创意与媒体
-用于处理图像、视频、音频和创意内容的技能。
+### Creative & Media
+Skills for working with images, videos, audio, and creative content.
 
-### 开发
-用于软件开发、文档和技术工作流的技能。
+### Development
+Skills for software development, documentation, and technical workflows.
 
-### 生产力与组织
-用于组织文件、管理任务和个人生产力的技能。
+### Productivity & Organization
+Skills for organizing files, managing tasks, and personal productivity.
 
 ---
 
-感谢你对 Awesome Claude Skills 的贡献！
+Thank you for contributing to Awesome Claude Skills!
+

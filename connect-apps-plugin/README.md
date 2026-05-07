@@ -1,41 +1,41 @@
-# 连接应用插件
+# Connect Apps Plugin
 
-让 Claude 在 500+ 应用中执行真实操作。使用 Composio 在底层处理认证和连接。
+Let Claude perform real actions in 500+ apps. Handles auth and connections using Composio under the hood.
 
-## 安装
+## Install
 
 ```bash
 claude --plugin-dir ./connect-apps-plugin
 ```
 
-然后运行设置：
+Then run the setup:
 ```
 /connect-apps:setup
 ```
 
-## 你获得什么
+## What You Get
 
-安装后，Claude 可以：
-- **发送邮件** 通过 Gmail、Outlook
-- **创建 Issue** 在 GitHub、GitLab、Jira、Linear
-- **发布消息** 到 Slack、Discord、Teams
-- **更新文档** 在 Notion、Google Docs
-- **管理数据** 在 Sheets、Airtable、数据库
-- **以及 500+ 更多操作**
+Once installed, Claude can:
+- **Send emails** via Gmail, Outlook
+- **Create issues** on GitHub, GitLab, Jira, Linear
+- **Post messages** to Slack, Discord, Teams
+- **Update docs** in Notion, Google Docs
+- **Manage data** in Sheets, Airtable, databases
+- **And 500+ more actions**
 
-## 工作原理
+## How It Works
 
-1. 从 [platform.composio.dev](https://platform.composio.dev/?utm_source=Github&utm_content=AwesomeSkills) 获取免费 API 密钥
-2. 运行 `/connect-apps:setup` 并粘贴你的密钥
-3. 重启 Claude Code
-4. 第一次使用应用时，你将通过 OAuth 授权
-5. 就是这样——Claude 现在可以执行真实操作了
+1. Get a free API key from [platform.composio.dev](https://platform.composio.dev/?utm_source=Github&utm_content=AwesomeSkills)
+2. Run `/connect-apps:setup` and paste your key
+3. Restart Claude Code
+4. First time using an app, you'll authorize via OAuth
+5. That's it - Claude can now take real actions
 
-## 试用
+## Try It
 
-设置后，问 Claude：
+After setup, ask Claude:
 ```
-给我发一封测试邮件到 myemail@example.com
+Send me a test email at myemail@example.com
 ```
 
 ---
