@@ -50,8 +50,18 @@ class SkillValidator:
     # 目录命名规范：小写字母、数字、连字符
     DIR_NAME_PATTERN = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
 
-    # 可选资源目录
-    OPTIONAL_DIRS = {'scripts', 'references', 'assets', 'examples'}
+    # 标准可选资源目录
+    OPTIONAL_DIRS = {
+        'scripts',      # 可执行脚本
+        'references',   # 参考文档
+        'reference',    # 参考文档(单数形式,兼容性)
+        'assets',       # 资源文件
+        'examples',     # 示例文件
+        'templates',    # 模板文件
+        'core',         # 核心模块
+        'themes',       # 主题文件
+        'docs',         # 文档
+    }
 
     def __init__(self, repo_root: Optional[Path] = None):
         self.repo_root = repo_root or Path.cwd()
@@ -183,11 +193,22 @@ class SkillValidator:
 
     def _validate_structure(self, skill_path: Path, result: ValidationResult):
         """验证目录结构"""
+        # 特殊技能目录映射
+        special_dirs = {
+            'canvas-design': {'canvas-fonts'},  # canvas-design 专用的字体目录
+            'document-skills': {'docx', 'pdf', 'pptx', 'xlsx'},  # 文档技能的子技能
+        }
+        
+        # 获取当前技能允许的目录
+        allowed_dirs = self.OPTIONAL_DIRS.copy()
+        if skill_path.name in special_dirs:
+            allowed_dirs.update(special_dirs[skill_path.name])
+        
         # 检查可选目录
         for item in skill_path.iterdir():
-            if item.is_dir() and item.name not in self.OPTIONAL_DIRS:
+            if item.is_dir() and item.name not in allowed_dirs:
                 result.add_warning(
-                    f"未知目录 '{item.name}'。可选目录: {', '.join(self.OPTIONAL_DIRS)}",
+                    f"目录 '{item.name}' 不在标准目录列表中。标准目录: {', '.join(sorted(allowed_dirs))}",
                     str(item)
                 )
 

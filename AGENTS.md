@@ -98,9 +98,14 @@ Claude 执行此技能的详细指导...
 | 目录 | 用途 | 示例 |
 |------|------|------|
 | `scripts/` | 可执行脚本（Python/Bash） | `scripts/rotate_pdf.py` |
-| `reference/` | 参考资料文档 | `references/api_docs.md` |
+| `references/` | 参考资料文档（推荐） | `references/api_docs.md` |
+| `reference/` | 参考资料文档（单数形式，兼容） | `reference/api_docs.md` |
 | `assets/` | 资源文件（模板、字体、图片） | `assets/logo.png` |
 | `examples/` | 示例文件 | `examples/sample-output.md` |
+| `templates/` | 模板文件 | `templates/email_template.html` |
+| `core/` | 核心模块代码 | `core/validator.py` |
+| `themes/` | 主题配置文件 | `themes/dark.json` |
+| `docs/` | 技能相关文档 | `docs/usage.md` |
 
 ### 写作风格
 

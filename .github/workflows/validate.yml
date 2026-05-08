@@ -1,16 +1,20 @@
-name: Validate Skills
+name: Validate Skills and Docs
 
 on:
   push:
     branches: [main]
     paths:
       - '*/SKILL.md'
-      - 'scripts/validate_skill.py'
+      - 'scripts/*.py'
+      - 'docs/**'
+      - 'README.md'
   pull_request:
     branches: [main]
     paths:
       - '*/SKILL.md'
-      - 'scripts/validate_skill.py'
+      - 'scripts/*.py'
+      - 'docs/**'
+      - 'README.md'
 
 jobs:
   validate:
@@ -30,8 +34,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Validate all skills
-        run: python scripts/validate_skill.py --all
+      - name: Run unified validation
+        run: python scripts/unified_check.py --ci --json > validation-report.json
 
       - name: Upload validation report
         if: always()
@@ -40,3 +44,14 @@ jobs:
           name: validation-report
           path: validation-report.json
           retention-days: 7
+
+      - name: Check validation results
+        run: |
+          if [ -f validation-report.json ]; then
+            valid=$(python -c "import json; print(json.load(open('validation-report.json'))['valid'])")
+            if [ "$valid" != "True" ]; then
+              echo "❌ Validation failed"
+              cat validation-report.json
+              exit 1
+            fi
+          fi
