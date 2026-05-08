@@ -1,324 +1,327 @@
 ---
 name: meeting-insights-analyzer
-description: 分析会议转录和录音，揭示行为模式、沟通洞察和可操作的反馈。识别你何时回避冲突、使用填充词、主导对话或错过倾听机会。非常适合寻求提高沟通和领导技能的专业人士。
+description: Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking to improve their communication and leadership skills.
 ---
 
-# 会议洞察分析器
+# Meeting Insights Analyzer
 
-此技能将你的会议转录转化为关于你沟通模式的可操作洞察，帮助你成为更有效的沟通者和领导者。
+This skill transforms your meeting transcripts into actionable insights about your communication patterns, helping you become a more effective communicator and leader.
 
-## 何时使用此技能
+## When to Use This Skill
 
-- 分析你跨多次会议的沟通模式
-- 获取关于你的领导和引导风格的反馈
-- 识别你何时回避困难对话
-- 了解你的说话习惯和填充词
-- 随时间追踪沟通技能的改进
-- 用具体示例准备绩效审查
-- 指导团队成员改善他们的沟通风格
+- Analyzing your communication patterns across multiple meetings
+- Getting feedback on your leadership and facilitation style
+- Identifying when you avoid difficult conversations
+- Understanding your speaking habits and filler words
+- Tracking improvement in communication skills over time
+- Preparing for performance reviews with concrete examples
+- Coaching team members on their communication style
 
-## 此技能的功能
+## What This Skill Does
 
-1. **模式识别**：识别跨会议的重复行为，如：
-   - 冲突回避或间接沟通
-   - 说话比例和轮流模式
-   - 提问与陈述模式
-   - 积极倾听指标
-   - 决策方法
+1. **Pattern Recognition**: Identifies recurring behaviors across meetings like:
+   - Conflict avoidance or indirect communication
+   - Speaking ratios and turn-taking
+   - Question-asking vs. statement-making patterns
+   - Active listening indicators
+   - Decision-making approaches
 
-2. **沟通分析**：评估沟通有效性：
-   - 清晰度和直接性
-   - 填充词和模糊语言的使用
-   - 语气和情感模式
-   - 会议控制和引导
+2. **Communication Analysis**: Evaluates communication effectiveness:
+   - Clarity and directness
+   - Use of filler words and hedging language
+   - Tone and sentiment patterns
+   - Meeting control and facilitation
 
-3. **可操作反馈**：提供具体的、带时间戳的示例，包括：
-   - 发生了什么
-   - 为什么重要
-   - 如何改进
+3. **Actionable Feedback**: Provides specific, timestamped examples with:
+   - What happened
+   - Why it matters
+   - How to improve
 
-4. **趋势追踪**：在分析多次会议时比较随时间的模式
+4. **Trend Tracking**: Compares patterns over time when analyzing multiple meetings
 
-## 如何使用
+## How to Use
 
-### 基础设置
+### Basic Setup
 
-1. 将会议转录下载到文件夹（如 `~/meetings/`）
-2. 在 Claude Code 中导航到该文件夹
-3. 请求你想要的分析
+1. Download your meeting transcripts to a folder (e.g., `~/meetings/`)
+2. Navigate to that folder in Claude Code
+3. Ask for the analysis you want
 
-### 快速开始示例
-
-```
-分析此文件夹中的所有会议，告诉我我何时回避了冲突。
-```
+### Quick Start Examples
 
 ```
-查看我过去一个月的会议并识别我的沟通模式。
+Analyze all meetings in this folder and tell me when I avoided conflict.
 ```
 
 ```
-比较这两个会议文件夹之间的我的引导风格。
+Look at my meetings from the past month and identify my communication patterns.
 ```
 
-### 高级分析
-
 ```
-分析此文件夹中的所有转录并：
-1. 识别我何时打断他人
-2. 计算我的说话比例
-3. 找到我避免给出直接反馈的时刻
-4. 追踪我的填充词使用
-5. 展示积极倾听的示例
+Compare my facilitation style between these two meeting folders.
 ```
 
-## 说明
+### Advanced Analysis
 
-当用户请求会议分析时：
+```
+Analyze all transcripts in this folder and:
+1. Identify when I interrupted others
+2. Calculate my speaking ratio
+3. Find moments I avoided giving direct feedback
+4. Track my use of filler words
+5. Show examples of good active listening
+```
 
-1. **发现可用数据**
-   - 扫描文件夹中的转录文件（.txt、.md、.vtt、.srt、.docx）
-   - 检查文件是否包含说话者标签和时间戳
-   - 确认会议的日期范围
-   - 在转录中识别用户的名字/标识符
+## Instructions
 
-2. **澄清分析目标**
+When a user requests meeting analysis:
+
+1. **Discover Available Data**
+   - Scan the folder for transcript files (.txt, .md, .vtt, .srt, .docx)
+   - Check if files contain speaker labels and timestamps
+   - Confirm the date range of meetings
+   - Identify the user's name/identifier in transcripts
+
+2. **Clarify Analysis Goals**
    
-   如果未指定，询问他们想学习什么：
-   - 特定行为（冲突回避、打断、填充词）
-   - 沟通有效性（清晰度、直接性、倾听）
-   - 会议引导技能
-   - 说话模式和比例
-   - 需要改进的领域
+   If not specified, ask what they want to learn:
+   - Specific behaviors (conflict avoidance, interruptions, filler words)
+   - Communication effectiveness (clarity, directness, listening)
+   - Meeting facilitation skills
+   - Speaking patterns and ratios
+   - Growth areas for improvement
    
-3. **分析模式**
+3. **Analyze Patterns**
 
-   对于每个请求的洞察：
+   For each requested insight:
    
-   **冲突回避**：
-   - 寻找模糊语言（"也许"、"有点"、"我认为"）
-   - 间接措辞而非直接请求
-   - 紧张出现时改变话题
-   - 同意但不承诺（"是的，但是..."）
-   - 不 addressing 明显问题
+   **Conflict Avoidance**:
+   - Look for hedging language ("maybe", "kind of", "I think")
+   - Indirect phrasing instead of direct requests
+   - Changing subject when tension arises
+   - Agreeing without commitment ("yeah, but...")
+   - Not addressing obvious problems
    
-   **说话比例**：
-   - 计算会议中说话的百分比
-   - 计数打断（用户打断和被他人打断）
-   - 测量平均说话轮次长度
-   - 追踪问题与陈述比例
+   **Speaking Ratios**:
+   - Calculate percentage of meeting spent speaking
+   - Count interruptions (by and of the user)
+   - Measure average speaking turn length
+   - Track question vs. statement ratios
    
-   **填充词**：
-   - 计数"嗯"、"啊"、"像"、"你知道"、"实际上"等
-   - 注意每分钟或每说话轮的频率
-   - 识别它们增加的情况（紧张、不确定）
+   **Filler Words**:
+   - Count "um", "uh", "like", "you know", "actually", etc.
+   - Note frequency per minute or per speaking turn
+   - Identify situations where they increase (nervous, uncertain)
    
-   **积极倾听**：
-   - 引用他人先前观点的问题
-   - 重述或总结他人的想法
-   - 在他人贡献基础上构建
-   - 提出澄清问题
+   **Active Listening**:
+   - Questions that reference others' previous points
+   - Paraphrasing or summarizing others' ideas
+   - Building on others' contributions
+   - Asking clarifying questions
    
-   **领导与引导**：
-   - 决策方法（指令式与协作式）
-   - 如何处理分歧
-   - 包含较安静的参与者
-   - 时间管理和议程控制
-   - 跟进和行动项清晰度
+   **Leadership & Facilitation**:
+   - Decision-making approach (directive vs. collaborative)
+   - How disagreements are handled
+   - Inclusion of quieter participants
+   - Time management and agenda control
+   - Follow-up and action item clarity
 
-4. **提供具体示例**
+4. **Provide Specific Examples**
 
-   对于发现的每个模式，包括：
+   For each pattern found, include:
    
    ```markdown
-   ### [模式名称]
+   ### [Pattern Name]
    
-   **发现**：[模式的一句话摘要]
+   **Finding**: [One-sentence summary of the pattern]
    
-   **频率**：[Y 次会议中 X 次]
+   **Frequency**: [X times across Y meetings]
    
-   **示例**：
+   **Examples**:
    
-   1. **[会议名称/日期]** - [时间戳]
+   1. **[Meeting Name/Date]** - [Timestamp]
       
-      **发生了什么**：
-      > [转录中的实际引用]
+      **What Happened**:
+      > [Actual quote from transcript]
       
-      **为什么这很重要**：
-      [影响或错过机会的解释]
+      **Why This Matters**:
+      [Explanation of the impact or missed opportunity]
       
-      **更好的方法**：
-      [具体的替代措辞或行为]
+      **Better Approach**:
+      [Specific alternative phrasing or behavior]
    
-   [重复 2-3 个最强示例]
+   [Repeat for 2-3 strongest examples]
    ```
 
-5. **综合洞察**
+5. **Synthesize Insights**
 
-   在分析所有模式后，提供：
+   After analyzing all patterns, provide:
    
    ```markdown
-   # 会议洞察摘要
+   # Meeting Insights Summary
    
-   **分析周期**：[日期范围]
-   **分析的会议**：[X 次会议]
-   **总时长**：[X 小时]
+   **Analysis Period**: [Date range]
+   **Meetings Analyzed**: [X meetings]
+   **Total Duration**: [X hours]
    
-   ## 识别的关键模式
+   ## Key Patterns Identified
    
-   ### 1. [主要模式]
-   - **观察到**：[你看到的]
-   - **影响**：[为什么重要]
-   - **建议**：[如何改进]
+   ### 1. [Primary Pattern]
+   - **Observed**: [What you saw]
+   - **Impact**: [Why it matters]
+   - **Recommendation**: [How to improve]
    
-   ### 2. [第二个模式]
-   [相同结构]
+   ### 2. [Second Pattern]
+   [Same structure]
    
-   ## 沟通优势
+   ## Communication Strengths
    
-   1. [带示例的优势 1]
-   2. [带示例的优势 2]
-   3. [带示例的优势 3]
+   1. [Strength 1 with example]
+   2. [Strength 2 with example]
+   3. [Strength 3 with example]
    
-   ## 成长机会
+   ## Growth Opportunities
    
-   1. **[领域 1]**：[具体、可操作的建议]
-   2. **[领域 2]**：[具体、可操作的建议]
-   3. **[领域 3]**：[具体、可操作的建议]
+   1. **[Area 1]**: [Specific, actionable advice]
+   2. **[Area 2]**: [Specific, actionable advice]
+   3. **[Area 3]**: [Specific, actionable advice]
    
-   ## 说话统计
+   ## Speaking Statistics
    
-   - 平均说话时间：[会议的 X%]
-   - 提出的问题：[每次会议平均 X 个]
-   - 填充词：[每分钟 X 个]
-   - 打断：[每次会议 X 次发出 / Y 次接收]
+   - Average speaking time: [X% of meeting]
+   - Questions asked: [X per meeting average]
+   - Filler words: [X per minute]
+   - Interruptions: [X given / Y received per meeting]
    
-   ## 下一步
+   ## Next Steps
    
-   [3-5 个改善沟通的具体行动]
+   [3-5 concrete actions to improve communication]
    ```
 
-6. **提供后续选项**
-   - 在未来会议中追踪相同的指标
-   - 深入探讨特定会议或模式
-   - 与行业基准比较
-   - 创建个人沟通发展计划
-   - 为绩效审查生成摘要
+6. **Offer Follow-Up Options**
+   - Track these same metrics in future meetings
+   - Deep dive into specific meetings or patterns
+   - Compare to industry benchmarks
+   - Create a personal communication development plan
+   - Generate a summary for performance reviews
 
-## 示例
+## Examples
 
-### 示例 1：冲突回避分析（灵感来自 Dan Shipper）
+### Example 1: Conflict Avoidance Analysis (Inspired by Dan Shipper)
 
-**用户**："我下载所有会议录音并把它们放在一个文件夹中。告诉我所有我微妙回避冲突的时刻。"
+**User**: "I download all of my meeting recordings and put them in a folder. Tell me all the times I've subtly avoided conflict."
 
-**输出**：
+**Output**: 
 ```markdown
-# 冲突回避模式
+# Conflict Avoidance Patterns
 
-在 15 次会议中发现 23 个你使用间接沟通或未直接解决紧张的情况。
+Found 23 instances across 15 meetings where you used indirect 
+communication or avoided addressing tensions directly.
 
-## 模式：对关键反馈模糊
+## Pattern: Hedging on Critical Feedback
 
-**频率**：7 次会议中 8 次
+**Frequency**: 8 times across 7 meetings
 
-**示例 1：与 Sarah 的 1:1** - 00:14:32
+**Example 1: 1:1 with Sarah** - 00:14:32
 
-**发生了什么**：
-> "所以，我在想...也许我们可以，像，潜在地
-> 考虑再次查看时间线？我的意思是，如果你
-> 认为那有意义。但你觉得最好的就行！"
+**What Happened**:
+> "So, I was thinking... maybe we could, like, potentially 
+> consider looking at the timeline again? I mean, if you 
+> think that makes sense. But whatever you think is best!"
 
-**为什么这很重要**：
-你需要解决 Sarah 的项目落后于计划的问题，
-但模糊语言（"也许"、"潜在地"、"如果你认为"）
-和结尾的推诿（"你觉得最好的就行"）使她容易
-错过紧迫性。
+**Why This Matters**:
+You needed to address that Sarah's project was behind schedule, 
+but the hedging language ("maybe", "potentially", "if you think") 
+and the deflection at the end ("whatever you think") made it easy 
+for her to miss the urgency.
 
-**更好的方法**：
-"Sarah，项目已经落后两周了。我们需要
-讨论什么阻碍了进展并今天创建新的时间线。"
+**Better Approach**:
+"Sarah, the project is two weeks behind schedule. We need to 
+discuss what's blocking progress and create a new timeline 
+today."
 
-[其他示例...]
+[Additional examples...]
 
-## 建议
+## Recommendations
 
-1. **直接命名问题**在第一句话中
-2. **删除模糊词**如"也许"、"有点"、" sort of"
-3. **提出具体问题**而非暗示
-4. **安排困难对话**而非随意提出
+1. **Name the issue directly** in the first sentence
+2. **Remove hedging words** like "maybe," "kind of," "sort of"
+3. **Ask specific questions** instead of hinting
+4. **Schedule difficult conversations** instead of raising them casually
 ```
 
-### 示例 2：领导引导
+### Example 2: Leadership Facilitation
 
-**用户**："分析我的团队会议并告诉我关于我的引导风格。"
+**User**: "Analyze my team meetings and tell me about my facilitation style."
 
-**输出**：提供关于以下方面的洞察：
-- 你说话与团队成员的比例（60% vs. 40%）
-- 你是提问还是做陈述（3:1 比例）
-- 你如何处理分歧（倾向于过快解决）
-- 谁说话最少以及你是否吸引他们
-- 良好和错过的引导时刻示例
+**Output**: Provides insights on:
+- How much you speak vs. team members (60% vs. 40%)
+- Whether you ask questions or make statements (3:1 ratio)
+- How you handle disagreements (tendency to resolve too quickly)
+- Who speaks least and whether you draw them in
+- Examples of good and missed facilitation moments
 
-### 示例 3：个人发展追踪
+### Example 3: Personal Development Tracking
 
-**用户**："比较我 Q1 与 Q2 的会议，看看我的倾听技能是否改善。"
+**User**: "Compare my meetings from Q1 vs. Q2 to see if I've improved my listening skills."
 
-**输出**：创建比较分析显示：
-- 打断减少（每次会议 8 次 → 3 次）
-- 澄清问题增加（每次会议 2 → 7 次）
-- 在他人想法基础上构建的改进
-- 显示差异的具体示例
-- 剩余的成長领域
+**Output**: Creates a comparative analysis showing:
+- Decrease in interruptions (8 per meeting → 3 per meeting)
+- Increase in clarifying questions (2 → 7 per meeting)
+- Improvement in building on others' ideas
+- Specific examples showing the difference
+- Remaining areas for growth
 
-## 设置技巧
+## Setup Tips
 
-### 获取会议转录
+### Getting Meeting Transcripts
 
-**来自 Granola**（Lenny 新闻通讯订阅免费）：
-- Granola 自动转录你的会议
-- 将转录导出到文件夹：[如何操作的说明]
-- 将 Claude Code 指向该文件夹
+**From Granola** (free with Lenny's newsletter subscription):
+- Granola auto-transcribes your meetings
+- Export transcripts to a folder: [Instructions on how]
+- Point Claude Code to that folder
 
-**来自 Zoom**：
-- 启用带转录的云录制
-- 会议后下载 VTT 或 SRT 文件
-- 存储到专用文件夹
+**From Zoom**:
+- Enable cloud recording with transcription
+- Download VTT or SRT files after meetings
+- Store in a dedicated folder
 
-**来自 Google Meet**：
-- 使用 Google Docs 自动转录
-- 将转录文档保存到文件夹
-- 下载为 .txt 文件或给 Claude Code 访问权限
+**From Google Meet**:
+- Use Google Docs auto-transcription
+- Save transcript docs to a folder
+- Download as .txt files or give Claude Code access
 
-**来自 Fireflies.ai、Otter.ai 等**：
-- 批量导出转录
-- 存储到本地文件夹
-- 对文件夹运行分析
+**From Fireflies.ai, Otter.ai, etc.**:
+- Export transcripts in bulk
+- Store in a local folder
+- Run analysis on the folder
 
-### 最佳实践
+### Best Practices
 
-1. **一致的命名**：使用 `YYYY-MM-DD - 会议名称.txt` 格式
-2. **定期分析**：每月或每季度审查趋势
-3. **具体查询**：一次询问一个行为以获得深度
-4. **隐私**：将敏感会议数据保留在本地
-5. **以行动为导向**：一次专注于一个改进领域
+1. **Consistent naming**: Use `YYYY-MM-DD - Meeting Name.txt` format
+2. **Regular analysis**: Review monthly or quarterly for trends
+3. **Specific queries**: Ask about one behavior at a time for depth
+4. **Privacy**: Keep sensitive meeting data local
+5. **Action-oriented**: Focus on one improvement area at a time
 
-## 常见分析请求
+## Common Analysis Requests
 
-- "我何时回避困难对话？"
-- "我多久打断他人一次？"
-- "我的说话与倾听比例是多少？"
-- "我提出好问题吗？"
-- "我如何处理分歧？"
-- "我是否包容所有声音？"
-- "我使用太多填充词吗？"
-- "我的行动项有多清晰？"
-- "我是否偏离议程或跑题？"
-- "我的沟通随时间如何变化？"
+- "When do I avoid difficult conversations?"
+- "How often do I interrupt others?"
+- "What's my speaking vs. listening ratio?"
+- "Do I ask good questions?"
+- "How do I handle disagreement?"
+- "Am I inclusive of all voices?"
+- "Do I use too many filler words?"
+- "How clear are my action items?"
+- "Do I stay on agenda or get sidetracked?"
+- "How has my communication changed over time?"
 
-## 相关用例
+## Related Use Cases
 
-- 从洞察创建个人发展计划
-- 用示例准备绩效审查材料
-- 指导直接下属的沟通
-- 分析销售或支持的客户电话模式
-- 研究谈判策略和结果
+- Creating a personal development plan from insights
+- Preparing performance review materials with examples
+- Coaching direct reports on their communication
+- Analyzing customer calls for sales or support patterns
+- Studying negotiation tactics and outcomes
+

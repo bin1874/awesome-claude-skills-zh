@@ -1,346 +1,345 @@
 ---
 name: tailored-resume-generator
-description: 分析职位描述并生成定制简历，突出相关经验、技能和成就，以最大化面试机会
+description: Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances
 ---
 
-# 定制简历生成器
+# Tailored Resume Generator
 
-## 何时使用此技能
+## When to Use This Skill
 
-- 申请特定职位
-- 为不同行业或角色定制你的简历
-- 为职业转型突出相关经验
-- 为 ATS（申请人追踪系统）优化你的简历
-- 为不同的求职申请创建多个简历版本
-- 强调招聘帖子中提到的特定技能
+- Applying for a specific job position
+- Customizing your resume for different industries or roles
+- Highlighting relevant experience for career transitions
+- Optimizing your resume for ATS (Applicant Tracking Systems)
+- Creating multiple resume versions for different job applications
+- Emphasizing specific skills mentioned in job postings
 
-## 此技能的功能
+## What This Skill Does
 
-1. **分析职位描述**：从招聘帖子中提取关键要求、技能、资格和关键词
-2. **识别优先级**：根据职位描述的语言和结构确定雇主最看重什么
-3. **定制内容**：重新组织并强调相关经验、技能和成就
-4. **优化关键词**：在整个简历中自然地融入 ATS 友好的关键词
-5. **专业格式化**：创建适合各种格式的干净、专业的简历布局
-6. **提供建议**：建议改进并突出需要解决的差距
+1. **Analyzes Job Descriptions**: Extracts key requirements, skills, qualifications, and keywords from job postings
+2. **Identifies Priorities**: Determines what employers value most based on the job description language and structure
+3. **Tailors Content**: Reorganizes and emphasizes relevant experience, skills, and achievements
+4. **Optimizes Keywords**: Incorporates ATS-friendly keywords naturally throughout the resume
+5. **Formats Professionally**: Creates clean, professional resume layouts suitable for various formats
+6. **Provides Recommendations**: Suggests improvements and highlights gaps to address
 
-## 如何使用
+## How to Use
 
-### 基础用法
-提供职位描述和你的背景信息：
-
-```
-我正在申请这份工作：
-
-[粘贴职位描述]
-
-这是我的背景：
-- 在 TechCorp 担任 5 年软件工程师
-- 带领 3 名开发者的团队进行移动应用项目
-- 精通 Python、JavaScript、React
-- 州立大学计算机科学学位
-```
-
-### 使用现有简历
-上传或粘贴你当前的简历以及职位描述：
+### Basic Usage
+Provide a job description and your background information:
 
 ```
-请为这个职位定制我的简历：
+I'm applying for this job:
 
-职位描述：
-[粘贴职位描述]
+[paste job description]
 
-我当前的简历：
-[粘贴简历内容]
+Here's my background:
+- 5 years as software engineer at TechCorp
+- Led team of 3 developers on mobile app project
+- Expert in Python, JavaScript, React
+- Computer Science degree from State University
 ```
 
-### 职业转型
-当转换行业或角色时：
+### With Existing Resume
+Upload or paste your current resume along with the job description:
 
 ```
-我正在从营销转向产品管理。
-这是我正在申请的职位：
+Please tailor my resume for this position:
 
-[粘贴职位描述]
+Job Description:
+[paste job description]
 
-我的可转移经验：
-- 7 年数字营销经验
-- 领导跨职能团队
-- 管理产品发布
-- 数据分析和 A/B 测试
+My Current Resume:
+[paste resume content]
 ```
 
-## 示例
+### Career Transition
+When changing industries or roles:
 
-**用户请求：**
 ```
-我需要为这份工作定制简历：
+I'm transitioning from marketing to product management.
+Here's the job I'm applying for:
 
-高级数据分析师职位
+[paste job description]
 
-要求：
-- 5 年以上数据分析经验
-- 精通 SQL、Python 和数据可视化工具
-- A/B 测试和统计分析经验
-- 强大的沟通技能以展示发现
-- 医疗行业经验优先
-
-我的背景：
-- RetailCo 数据分析师（2019-2024）
-- 使用 Tableau 和 Power BI 创建仪表板
-- 构建 Python 脚本用于数据自动化
-- 与营销团队合作进行活动分析
-- 商业分析学位
-- 在 HealthPlus 诊所也有 1 年实习经验
+My transferable experience:
+- 7 years in digital marketing
+- Led cross-functional teams
+- Managed product launches
+- Data analysis and A/B testing
 ```
 
-**生成的输出：**
+## Example
+
+**User Request:**
+```
+I need a tailored resume for this job:
+
+Senior Data Analyst Position
+
+Requirements:
+- 5+ years experience in data analysis
+- Expert in SQL, Python, and data visualization tools
+- Experience with A/B testing and statistical analysis
+- Strong communication skills to present findings
+- Healthcare industry experience preferred
+
+My background:
+- Data Analyst at RetailCo (2019-2024)
+- Created dashboards using Tableau and Power BI
+- Built Python scripts for data automation
+- Worked with marketing team on campaign analysis
+- Business Analytics degree
+- Also did 1 year internship at HealthPlus clinic
+```
+
+**Generated Output:**
 
 ```markdown
-# 张三
-邮箱：zhang.san@email.com | 电话：(555) 123-4567 | LinkedIn：linkedin.com/in/zhangsan
+# JOHN DOE
+Email: john.doe@email.com | Phone: (555) 123-4567 | LinkedIn: linkedin.com/in/johndoe
 
-## 专业摘要
+## PROFESSIONAL SUMMARY
+Results-driven Data Analyst with 5+ years of experience leveraging SQL, Python, and advanced
+visualization tools to deliver actionable insights. Proven track record in statistical analysis,
+A/B testing, and cross-functional collaboration. Healthcare industry experience with strong
+ability to communicate complex data findings to stakeholders.
 
-结果导向的数据分析师，拥有 5 年以上经验，利用 SQL、Python 和高级
-可视化工具提供可操作的洞察。在统计分析、
-A/B 测试和跨职能协作方面有经过验证的记录。具有医疗行业经验，拥有强大的
-能力向利益相关者传达复杂的数据发现。
+## TECHNICAL SKILLS
+- **Data Analysis & Programming**: SQL, Python, Statistical Analysis, A/B Testing
+- **Visualization Tools**: Tableau, Power BI, Advanced Dashboard Development
+- **Data Management**: Data Automation, ETL Processes, Database Optimization
+- **Business Intelligence**: Campaign Analytics, Performance Metrics, KPI Tracking
 
-## 技术技能
-- **数据分析与编程**：SQL、Python、统计分析、A/B 测试
-- **可视化工具**：Tableau、Power BI、高级仪表板开发
-- **数据管理**：数据自动化、ETL 流程、数据库优化
-- **商业智能**：活动分析、绩效指标、KPI 追踪
+## PROFESSIONAL EXPERIENCE
 
-## 专业经验
+**Data Analyst** | RetailCo | 2019 - 2024
+- Designed and implemented 50+ SQL queries and Python automation scripts, reducing manual
+  data processing time by 60%
+- Conducted rigorous A/B testing and statistical analysis for marketing campaigns,
+  improving campaign ROI by 35%
+- Built interactive Tableau and Power BI dashboards for executive team, enabling
+  data-driven decision making
+- Presented analytical findings to cross-functional stakeholders including marketing,
+  operations, and executive leadership
+- Collaborated with marketing team to analyze customer behavior patterns and optimize
+  targeting strategies
 
-**数据分析师** | RetailCo | 2019 - 2024
-- 设计和实现 50+ SQL 查询和 Python 自动化脚本，减少手动
-  数据处理时间 60%
-- 为营销活动进行严格的 A/B 测试和统计分析，
-  提高活动 ROI 35%
-- 为执行团队构建交互式 Tableau 和 Power BI 仪表板，实现
-  数据驱动的决策
-- 向跨职能利益相关者展示分析发现，包括营销、
-  运营和执行领导层
-- 与营销团队合作分析客户行为模式并优化
-  目标策略
+**Data Analysis Intern** | HealthPlus Clinic | 2018 - 2019
+- Supported healthcare analytics initiatives by analyzing patient data and operational metrics
+- Gained exposure to healthcare industry data management and HIPAA compliance requirements
+- Assisted in creating reports for clinical staff to improve patient care workflows
 
-**数据分析实习生** | HealthPlus 诊所 | 2018 - 2019
-- 通过分析患者数据和运营指标支持医疗分析计划
-- 获得医疗行业数据管理和 HIPAA 合规要求的经验
-- 协助为临床 staff 创建报告以改善患者护理工作流程
+## EDUCATION
 
-## 教育背景
+**Bachelor of Science in Business Analytics**
+State University | Graduated 2018
 
-**商业分析理学学士**
-州立大学 | 2018 年毕业
-
-## 关键成就
-- 通过 Python 自动化减少数据处理时间 60%
-- 通过 A/B 测试和优化提高营销活动 ROI 35%
-- 创建现在在整个组织使用的数据可视化系统
+## KEY ACHIEVEMENTS
+- Reduced data processing time by 60% through Python automation
+- Improved marketing campaign ROI by 35% through A/B testing and optimization
+- Created data visualization system now used across entire organization
 ```
 
-**额外建议：**
-- 考虑添加任何特定的医疗项目或认证
-- 尽可能用指标量化更多成就
-- 如果你有 R 或高级统计方法经验，添加它们
-- 考虑提及任何对医疗法规（HIPAA 等）的熟悉程度
+**Additional Recommendations:**
+- Consider adding any specific healthcare projects or certifications
+- Quantify more achievements with metrics when possible
+- If you have experience with R or advanced statistical methods, add them
+- Consider mentioning any familiarity with healthcare regulations (HIPAA, etc.)
 
 ---
 
-## 说明
+## Instructions
 
-当用户请求简历定制时：
+When a user requests resume tailoring:
 
-### 1. 收集信息
+### 1. Gather Information
 
-**职位描述分析**：
-- 如果未提供，请求完整职位描述
-- 询问公司名称和职位
+**Job Description Analysis**:
+- Request the full job description if not provided
+- Ask for the company name and job title
 
-**候选人背景**：
-- 如果用户提供现有简历，以其为基础
-- 如果未提供，请求：
-  - 工作历史（职位、公司、日期、职责）
-  - 教育背景
-  - 关键技能和技术熟练度
-  - 显著成就和指标
-  - 认证或奖项
-  - 任何其他相关信息
+**Candidate Background**:
+- If user provides existing resume, use it as the foundation
+- If not, request:
+  - Work history (job titles, companies, dates, responsibilities)
+  - Education background
+  - Key skills and technical proficiencies
+  - Notable achievements and metrics
+  - Certifications or awards
+  - Any other relevant information
 
-### 2. 分析工作要求
+### 2. Analyze Job Requirements
 
-提取并优先排序：
-- **必备资格**：年经验数、所需技能、教育
-- **关键技能**：技术工具、方法论、能力
-- **软技能**：沟通、领导力、团队合作
-- **行业知识**：领域特定经验
-- **关键词**：重复术语、短语和流行语，用于 ATS 优化
-- **公司价值观**：来自职位描述的文化契合指标
+Extract and prioritize:
+- **Must-have qualifications**: Years of experience, required skills, education
+- **Key skills**: Technical tools, methodologies, competencies
+- **Soft skills**: Communication, leadership, teamwork
+- **Industry knowledge**: Domain-specific experience
+- **Keywords**: Repeated terms, phrases, and buzzwords for ATS optimization
+- **Company values**: Cultural fit indicators from job description
 
-创建心理地图：
-- 优先级 1：关键要求（硬性条件）
-- 优先级 2：重要资格（强烈期望）
-- 优先级 3：加分技能（额外加分）
+Create a mental map of:
+- Priority 1: Critical requirements (deal-breakers)
+- Priority 2: Important qualifications (strongly desired)
+- Priority 3: Nice-to-have skills (bonus points)
 
-### 3. 将候选人经验映射到要求
+### 3. Map Candidate Experience to Requirements
 
-对于每个工作要求：
-- 从候选人背景中识别匹配经验
-- 如果没有直接匹配，找到可转移技能
-- 注意需要解决或弱化的差距
-- 识别要突出的独特优势
+For each job requirement:
+- Identify matching experience from candidate's background
+- Find transferable skills if no direct match
+- Note gaps that need to be addressed or de-emphasized
+- Identify unique strengths to highlight
 
-### 4. 构建定制简历
+### 4. Structure the Tailored Resume
 
-**专业摘要**（3-4 行）：
-- 以目标角色/领域的年经验数开头
-- 包括职位描述中的前 3-4 个所需技能
-- 如果相关，提及行业经验
-- 突出独特价值主张
+**Professional Summary** (3-4 lines):
+- Lead with years of experience in the target role/field
+- Include top 3-4 required skills from job description
+- Mention industry experience if relevant
+- Highlight unique value proposition
 
-**技术/核心技能部分**：
-- 按匹配工作要求的类别对技能分组
-- 首先列出所需工具和技术
-- 使用职位描述中的确切术语
-- 仅包含你可以用经验证实的技能
+**Technical/Core Skills Section**:
+- Group skills by category matching job requirements
+- List required tools and technologies first
+- Use exact terminology from job description
+- Only include skills you can substantiate with experience
 
-**专业经验**：
-- 对于每个角色，强调与工作要求一致的职责和成就
-- 使用行动动词：领导、开发、实现、优化、管理、创建、分析
-- **量化成就**：包括数字、百分比、时间框架、规模
-- 重新排序要点以优先最相关的经验
-- 自然地使用职位描述中的关键词
-- 格式：**[行动动词] + [什么] + [如何/为什么] + [结果/影响]**
+**Professional Experience**:
+- For each role, emphasize responsibilities and achievements aligned with job requirements
+- Use action verbs: Led, Developed, Implemented, Optimized, Managed, Created, Analyzed
+- **Quantify achievements**: Include numbers, percentages, timeframes, scale
+- Reorder bullet points to prioritize most relevant experience
+- Use keywords naturally from job description
+- Format: **[Action Verb] + [What] + [How/Why] + [Result/Impact]**
 
-**教育背景**：
-- 列出与职位相关的学位、认证
-- 如果早期职业，包括相关课程
-- 添加匹配工作要求的认证
+**Education**:
+- List degrees, certifications relevant to position
+- Include relevant coursework if early career
+- Add certifications that match job requirements
 
-**可选部分**（如果适用）：
-- 认证和执照
-- 出版物或演讲
-- 奖项和认可
-- 志愿工作（如果与角色相关）
-- 项目（特别是技术角色）
+**Optional Sections** (if applicable):
+- Certifications & Licenses
+- Publications or Speaking Engagements
+- Awards & Recognition
+- Volunteer Work (if relevant to role)
+- Projects (especially for technical roles)
 
-### 5. 为 ATS（申请人追踪系统）优化
+### 5. Optimize for ATS (Applicant Tracking Systems)
 
-- 使用标准部分标题（专业经验、教育背景、技能）
-- 自然地融入职位描述中的确切关键词
-- 避免表格、图形、页眉/页脚或复杂格式
-- 使用标准字体和要点
-- 包括首字母缩写和完整术语（如"SQL（结构化查询语言）"）
-- 在真实的情况下匹配职位术语
+- Use standard section headings (Professional Experience, Education, Skills)
+- Incorporate exact keywords from job description naturally
+- Avoid tables, graphics, headers/footers, or complex formatting
+- Use standard fonts and bullet points
+- Include both acronyms and full terms (e.g., "SQL (Structured Query Language)")
+- Match job title terminology where truthful
 
-### 6. 格式化和呈现
+### 6. Format and Present
 
-**格式选项**：
-- **Markdown**：干净、可读、易于复制
-- **纯文本**：ATS 优化、适用于所有系统
-- **Word/PDF 提示**：提供格式化指导
+**Format Options**:
+- **Markdown**: Clean, readable, easy to copy
+- **Plain Text**: ATS-optimized, safe for all systems
+- **Tips for Word/PDF**: Provide formatting guidance
 
-**简历结构指南**：
-- 少于 10 年经验保持 1 页，10 年以上 2 页
-- 使用一致的格式和间距
-- 确保联系信息突出
-- 使用逆时间顺序（最近的在前）
-- 保持干净、可扫描的布局，带有空白
+**Resume Structure Guidelines**:
+- Keep to 1 page for <10 years experience, 2 pages for 10+ years
+- Use consistent formatting and spacing
+- Ensure contact information is prominent
+- Use reverse chronological order (most recent first)
+- Maintain clean, scannable layout with white space
 
-### 7. 提供战略建议
+### 7. Provide Strategic Recommendations
 
-在展示定制简历后，提供：
+After presenting the tailored resume, offer:
 
-**优势分析**：
-- 什么使这个候选人具有竞争力
-- 在求职信或面试中强调的独特资格
+**Strengths Analysis**:
+- What makes this candidate competitive
+- Unique qualifications to emphasize in cover letter or interview
 
-**差距分析**：
-- 未完全满足的要求
-- 解决差距的建议（课程、项目、重新框架经验）
+**Gap Analysis**:
+- Requirements not fully met
+- Suggestions for addressing gaps (courses, projects, reframing experience)
 
-**面试准备提示**：
-- 与简历对齐的关键话题
-- 基于工作要求准备的故事
-- 展示契合度的提问
+**Interview Preparation Tips**:
+- Key talking points aligned with resume
+- Stories to prepare based on job requirements
+- Questions to ask that demonstrate fit
 
-**求职信钩子**：
-- 建议 2-3 个求职信开头
-- 要扩展的关键成就
+**Cover Letter Hooks**:
+- Suggest 2-3 opening lines for cover letter
+- Key achievements to expand upon
 
-### 8. 迭代和完善
+### 8. Iterate and Refine
 
-询问用户是否想要：
-- 调整强调或语气
-- 添加或删除部分
-- 为不同角色生成替代版本
-- 创建格式变体（传统与现代）
-- 开发特定角色版本（如果申请多个类似职位）
+Ask if user wants to:
+- Adjust emphasis or tone
+- Add or remove sections
+- Generate alternative versions for different roles
+- Create format variations (traditional vs. modern)
+- Develop role-specific versions (if applying to multiple similar positions)
 
-### 9. 遵循的最佳实践
+### 9. Best Practices to Follow
 
-**做**：
-- 保持真实准确——绝不伪造经验
-- 使用行业标准化术语
-- 用具体指标量化成就
-- 为特定工作定制每份简历
-- 校对语法和一致性
-- 保持语言简洁有力
+**Do**:
+- Be truthful and accurate - never fabricate experience
+- Use industry-standard terminology
+- Quantify achievements with specific metrics
+- Tailor each resume to specific job
+- Proofread for grammar and consistency
+- Keep language concise and impactful
 
-**不做**：
-- 包含个人信息（年龄、婚姻状况、照片，除非要求）
-- 使用第一人称代词（我、我的）
-- 包含推荐人（"可根据要求提供"已过时）
-- 如果职业 20+ 年列出每份工作（专注于相关的、最近的经验）
-- 使用未经定制的通用模板
-- 除非非常高级的角色否则超过 2 页
+**Don't**:
+- Include personal information (age, marital status, photo unless requested)
+- Use first-person pronouns (I, me, my)
+- Include references ("available upon request" is outdated)
+- List every job if career is 20+ years (focus on relevant, recent experience)
+- Use generic templates without customization
+- Exceed 2 pages unless very senior role
 
-### 10. 特殊考虑
+### 10. Special Considerations
 
-**职业转换者**：
-- 使用功能性或混合简历格式
-- 强调可转移技能
-- 在摘要中创建引人注目的叙述
-- 专注于相关项目和课程
+**Career Changers**:
+- Use functional or hybrid resume format
+- Emphasize transferable skills
+- Create compelling narrative in summary
+- Focus on relevant projects and coursework
 
-**应届毕业生**：
-- 以教育背景开头
-- 包括相关课程、项目、实习
-- 强调学生组织中的领导力
-- 如果 GPA 3.5+ 包括 GPA
+**Recent Graduates**:
+- Lead with education
+- Include relevant coursework, projects, internships
+- Emphasize leadership in student organizations
+- Include GPA if 3.5+
 
-**高级执行官**：
-- 以执行摘要开头
-- 专注于领导和战略影响
-- 包括董事会成员资格、演讲
-- 强调收入增长、团队建设、愿景
+**Senior Executives**:
+- Lead with executive summary
+- Focus on leadership and strategic impact
+- Include board memberships, speaking engagements
+- Emphasize revenue growth, team building, vision
 
-**技术角色**：
-- 显著包括技术技能部分
-- 列出编程语言、框架、工具
-- 包括 GitHub、作品集或项目链接
-- 提及方法论（Agile、Scrum 等）
+**Technical Roles**:
+- Include technical skills section prominently
+- List programming languages, frameworks, tools
+- Include GitHub, portfolio, or project links
+- Mention methodologies (Agile, Scrum, etc.)
 
-**创意角色**：
-- 包括作品集链接
-- 突出创意成就和活动
-- 提及工具和软件熟练度
-- 考虑更有创意的格式（同时保持 ATS 兼容性）
+**Creative Roles**:
+- Include link to portfolio
+- Highlight creative achievements and campaigns
+- Mention tools and software proficiencies
+- Consider more creative formatting (while maintaining ATS compatibility)
 
 ---
 
-## 获得最佳结果的提示
+## Tips for Best Results
 
-- **具体**：提供完整的职位描述和详细的背景信息
-- **分享指标**：描述你的经验时包括数字、百分比和可量化的成就
-- **表明格式偏好**：让技能知道你是否需要 ATS 优化、创意或传统格式
-- **提及约束**：分享任何特定要求（页数限制、要包括/排除的部分）
-- **迭代**：不要犹豫请求修订或替代方法
-- **多次申请**：为不同角色生成单独的定制版本
+- **Be specific**: Provide complete job descriptions and detailed background information
+- **Share metrics**: Include numbers, percentages, and quantifiable achievements when describing your experience
+- **Indicate format preference**: Let the skill know if you need ATS-optimized, creative, or traditional format
+- **Mention constraints**: Share any specific requirements (page limits, sections to include/exclude)
+- **Iterate**: Don't hesitate to ask for revisions or alternative approaches
+- **Multiple applications**: Generate separate tailored versions for different roles
 
-## 隐私声明
+## Privacy Note
 
-此技能处理你的个人和职业信息以生成定制简历。提交前始终审查输出以确保准确性和适当性。删除或修改你不想与潜在雇主分享的任何信息。
+This skill processes your personal and professional information to generate tailored resumes. Always review the output before submitting to ensure accuracy and appropriateness. Remove or modify any information you prefer not to share with potential employers.

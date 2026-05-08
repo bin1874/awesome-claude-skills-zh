@@ -1,0 +1,61 @@
+{
+  "categories": {
+    "文档处理": {
+      "description": "处理各种文档格式的技能",
+      "skills": ["document-skills"]
+    },
+    "开发与代码工具": {
+      "description": "辅助开发和代码编写的技能",
+      "skills": ["artifacts-builder", "changelog-generator", "langsmith-fetch", "mcp-builder", "skill-creator", "connect", "webapp-testing"]
+    },
+    "数据与分析": {
+      "description": "数据分析和研究类技能",
+      "skills": ["developer-growth-analysis"]
+    },
+    "商业与营销": {
+      "description": "商业和营销相关技能",
+      "skills": ["brand-guidelines", "competitive-ads-extractor", "domain-name-brainstormer", "internal-comms", "lead-research-assistant"]
+    },
+    "沟通与写作": {
+      "description": "沟通和内容创作技能",
+      "skills": ["content-research-writer", "meeting-insights-analyzer", "twitter-algorithm-optimizer"]
+    },
+    "创意与媒体": {
+      "description": "创意设计和媒体处理技能",
+      "skills": ["canvas-design", "image-enhancer", "slack-gif-creator", "theme-factory", "video-downloader"]
+    },
+    "生产力与组织": {
+      "description": "提升生产力和组织效率的技能",
+      "skills": ["file-organizer", "invoice-organizer", "raffle-winner-picker", "tailored-resume-generator"]
+    },
+    "协作与项目管理": {
+      "description": "团队协作和项目管理技能",
+      "skills": ["skill-share"]
+    },
+    "安全与系统": {
+      "description": "安全和系统管理技能",
+      "skills": []
+    },
+    "通过 Composio 的应用自动化": {
+      "description": "通过 Composio 连接 500+ 应用的技能",
+      "skills": ["connect-apps", "composio-skills"]
+    }
+  },
+  "external_skills": {
+    "文档处理": [
+      {"name": "docx", "url": "https://github.com/anthropics/skills/tree/main/skills/docx", "description": "创建、编辑、分析 Word 文档，支持修订追踪、批注、格式化。"},
+      {"name": "pdf", "url": "https://github.com/anthropics/skills/tree/main/skills/pdf", "description": "提取文本、表格、元数据，合并与批注 PDF。"},
+      {"name": "pptx", "url": "https://github.com/anthropics/skills/tree/main/skills/pptx", "description": "读取、生成和调整幻灯片、布局、模板。"},
+      {"name": "xlsx", "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx", "description": "电子表格操作：公式、图表、数据转换。"},
+      {"name": "Markdown to EPUB Converter", "url": "https://github.com/smerchek/claude-epub-skill", "description": "将 Markdown 文档和聊天摘要转换为专业的 EPUB 电子书文件。", "author": "@smerchek"}
+    ],
+    "开发与代码工具": [
+      {"name": "aws-skills", "url": "https://github.com/zxkane/aws-skills", "description": "AWS 开发，包含 CDK 最佳实践、成本优化 MCP 服务器，以及无服务器/事件驱动架构模式。"},
+      {"name": "Claude Code Terminal Title", "url": "https://github.com/bluzername/claude-code-terminal-title", "description": "为每个 Claude-Code 终端窗口设置动态标题，描述正在进行的工作。"},
+      {"name": "D3.js Visualization", "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill", "description": "教会 Claude 生成 D3 图表和交互式数据可视化。", "author": "@chrisvoncsefalvay"},
+      {"name": "FFUF Web Fuzzing", "url": "https://github.com/jthack/ffuf_claude_skill", "description": "集成 ffuf Web 模糊测试工具，让 Claude 可以运行模糊测试任务并分析漏洞结果。", "author": "@jthack"},
+      {"name": "iOS Simulator", "url": "https://github.com/conorluddy/ios-simulator-skill", "description": "让 Claude 能够与 iOS 模拟器交互，用于测试和调试 iOS 应用。", "author": "@conorluddy"},
+      {"name": "jules", "url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/jules", "description": "将编码任务委托给 Google Jules AI 智能体。", "author": "@sanjay3290"}
+    ]
+  }
+}
