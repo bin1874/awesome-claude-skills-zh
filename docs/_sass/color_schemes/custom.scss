@@ -57,8 +57,9 @@ $content-line-height: 1.8;
 
 // Spacing
 $spacing-unit: 1rem;
-$content-width: 900px;
-$sidebar-width: 280px;
+// Note: just-the-docs uses rem units for layout calculations
+// $content-width and $sidebar-width must use rem, not px
+// Using default theme values to avoid unit incompatibility
 
 // Border Radius
 $border-radius: 8px;
