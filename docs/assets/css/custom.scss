@@ -1,7 +1,8 @@
 ---
 ---
 // Custom styles for Awesome Claude Skills
-// Note: just-the-docs theme styles are loaded automatically via remote_theme
+// 导入共享变量
+@import "variables";
 
 // ============================================
 // Custom Styles for Awesome Claude Skills
@@ -12,13 +13,13 @@
   text-align: center;
   padding: 4rem 2rem 3rem;
   margin: -1.5rem -2rem 3rem;
-  background: linear-gradient(135deg, #FEF7F5 0%, #FDF2EF 50%, #FDF8F6 100%);
-  border-bottom: 1px solid #E5E7EB;
+  background: $hero-gradient;
+  border-bottom: 1px solid $border-color;
 
   h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #111827;
+    color: $body-heading-color;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 
@@ -29,7 +30,7 @@
 
   .subtitle {
     font-size: 1.25rem;
-    color: #6B7280;
+    color: $nav-child-link-color;
     margin-bottom: 1.5rem;
     max-width: 600px;
     margin-left: auto;
@@ -67,7 +68,7 @@
     .stat-number {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #D97757;
+      color: $primary-color;
       line-height: 1;
 
       @media (max-width: 768px) {
@@ -77,7 +78,7 @@
 
     .stat-label {
       font-size: 0.875rem;
-      color: #6B7280;
+      color: $nav-child-link-color;
       margin-top: 0.5rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -93,14 +94,14 @@
   margin: 2rem 0;
 
   .feature-card {
-    background: #FFFFFF;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
+    background: $card-background;
+    border: $card-border;
+    border-radius: $card-radius;
     padding: 1.5rem;
     transition: all 0.2s ease;
 
     &:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: $card-shadow-hover;
       transform: translateY(-2px);
     }
 
@@ -108,7 +109,7 @@
       margin-top: 0;
       margin-bottom: 0.75rem;
       font-size: 1.125rem;
-      color: #111827;
+      color: $body-heading-color;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -119,7 +120,7 @@
     }
 
     p {
-      color: #6B7280;
+      color: $nav-child-link-color;
       margin: 0;
       font-size: 0.95rem;
       line-height: 1.6;
@@ -135,15 +136,15 @@
   margin: 2rem 0;
 
   .platform-card {
-    background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
+    background: $card-gradient;
+    border: $card-border;
+    border-radius: $card-radius;
     padding: 1.75rem;
     text-align: center;
     transition: all 0.2s ease;
 
     &:hover {
-      border-color: #D97757;
+      border-color: $primary-color;
       box-shadow: 0 4px 16px rgba(217, 119, 87, 0.12);
     }
 
@@ -151,18 +152,18 @@
       margin-top: 0;
       margin-bottom: 0.75rem;
       font-size: 1.25rem;
-      color: #111827;
+      color: $body-heading-color;
     }
 
     p {
-      color: #6B7280;
+      color: $nav-child-link-color;
       margin-bottom: 1rem;
       font-size: 0.9rem;
       line-height: 1.6;
     }
 
     .platform-link {
-      color: #D97757;
+      color: $primary-color;
       font-weight: 500;
       text-decoration: none;
 
@@ -178,7 +179,7 @@
   text-align: center;
   padding: 3rem 2rem;
   margin: 3rem -2rem;
-  background: linear-gradient(135deg, #1F1F1F 0%, #2D2D2D 100%);
+  background: linear-gradient(135deg, $secondary-color 0%, #2D2D2D 100%);
   color: white;
   border-radius: 0;
 
@@ -189,7 +190,7 @@
   }
 
   p {
-    color: #9CA3AF;
+    color: $text-grey-lt;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
   }
@@ -198,17 +199,17 @@
     display: inline-block;
     padding: 0.875rem 2rem;
     margin: 0 0.5rem 0.5rem;
-    border-radius: 8px;
+    border-radius: $border-radius;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
 
     &:not(.secondary) {
-      background: #D97757;
+      background: $primary-color;
       color: white;
 
       &:hover {
-        background: #BF5E46;
+        background: $primary-hover;
         color: white;
       }
     }
@@ -235,7 +236,7 @@
     align-items: center;
     gap: 0.75rem;
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid #E5E7EB;
+    border-bottom: 2px solid $border-color;
     margin-bottom: 1.25rem;
 
     .category-icon {
@@ -245,16 +246,16 @@
     .category-title {
       margin: 0;
       font-size: 1.5rem;
-      color: #111827;
+      color: $body-heading-color;
       font-weight: 600;
     }
 
     .category-count {
-      background: #F3F4F6;
+      background: $code-background-color;
       padding: 0.25rem 0.75rem;
       border-radius: 20px;
       font-size: 0.85rem;
-      color: #6B7280;
+      color: $nav-child-link-color;
       font-weight: 500;
       margin-left: auto;
     }
@@ -269,19 +270,19 @@
 
   .skill-card {
     padding: 1.25rem;
-    border: 1px solid #E5E7EB;
+    border: $card-border;
     border-radius: 10px;
-    background: #FFFFFF;
+    background: $card-background;
     transition: all 0.2s ease;
 
     &:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      border-color: #D97757;
+      box-shadow: $card-shadow-hover;
+      border-color: $primary-color;
     }
 
     .skill-name {
       font-weight: 600;
-      color: #D97757;
+      color: $primary-color;
       text-decoration: none;
       display: block;
       margin-bottom: 0.5rem;
@@ -294,14 +295,14 @@
 
     .skill-desc {
       font-size: 0.9rem;
-      color: #4B5563;
+      color: $text-grey-dk;
       margin: 0;
       line-height: 1.6;
     }
 
     .skill-author {
       font-size: 0.8rem;
-      color: #8B5CF6;
+      color: $purple-200;
       margin-top: 0.5rem;
     }
   }
@@ -309,29 +310,29 @@
 
 // Translation Notice
 .translation-notice {
-  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
-  border: 1px solid #F59E0B;
+  background: linear-gradient(135deg, $yellow-000 0%, $yellow-100 100%);
+  border: 1px solid $yellow-200;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin: 2rem 0;
 
   p {
     margin: 0;
-    color: #92400E;
+    color: darken($yellow-200, 40%);
     font-size: 0.95rem;
     line-height: 1.6;
 
     strong {
-      color: #78350F;
+      color: darken($yellow-200, 50%);
     }
   }
 
   a {
-    color: #92400E;
+    color: darken($yellow-200, 40%);
     font-weight: 500;
 
     &:hover {
-      color: #78350F;
+      color: darken($yellow-200, 50%);
     }
   }
 }
@@ -344,25 +345,25 @@
   margin: 1.5rem 0;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #E5E7EB;
+  border: 1px solid $border-color;
 
   th, td {
     padding: 1rem 1.25rem;
     text-align: left;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid $border-color;
   }
 
   th {
-    background: #F9FAFB;
+    background: darken($body-background-color, 2%);
     font-weight: 600;
-    color: #374151;
+    color: $text-grey-dk;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
   td {
-    background: #FFFFFF;
+    background: $card-background;
     vertical-align: top;
   }
 
@@ -373,7 +374,7 @@
   }
 
   code {
-    background: #F3F4F6;
+    background: $code-background-color;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.85em;
@@ -382,12 +383,12 @@
 
 // Code Blocks Enhancement
 div.highlighter-rouge {
-  border-radius: 8px;
+  border-radius: $border-radius;
   margin: 1.5rem 0;
 
   .highlight {
-    border-radius: 8px;
-    background: #1F1F1F;
+    border-radius: $border-radius;
+    background: $secondary-color;
 
     pre {
       padding: 1.25rem;
@@ -399,8 +400,8 @@ div.highlighter-rouge {
 
 // Inline Code
 p code, li code {
-  background: #F3F4F6;
-  color: #D97757;
+  background: $code-background-color;
+  color: $primary-color;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-size: 0.9em;
@@ -408,8 +409,8 @@ p code, li code {
 
 // Table of Contents Enhancement
 #toc {
-  background: #F9FAFB;
-  border: 1px solid #E5E7EB;
+  background: darken($body-background-color, 2%);
+  border: 1px solid $border-color;
   border-radius: 10px;
   padding: 1.25rem;
   margin: 2rem 0;
@@ -424,11 +425,11 @@ p code, li code {
   }
 
   a {
-    color: #4B5563;
+    color: $text-grey-dk;
     text-decoration: none;
 
     &:hover {
-      color: #D97757;
+      color: $primary-color;
     }
   }
 }
@@ -441,33 +442,33 @@ p code, li code {
 
     p {
       margin: 0.5rem 0;
-      color: #6B7280;
+      color: $nav-child-link-color;
       font-size: 0.9rem;
 
       a {
-        color: #D97757;
+        color: $primary-color;
 
         &:hover {
-          color: #BF5E46;
+          color: $primary-hover;
         }
       }
     }
 
     .footer-original {
       font-size: 0.85rem;
-      color: #9CA3AF;
+      color: $text-grey-lt;
     }
   }
 }
 
 // Search Enhancement
 .search-input {
-  border-radius: 20px !important;
+  border-radius: $search-border-radius !important;
   padding-left: 1rem !important;
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.2) !important;
-    border-color: #D97757 !important;
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.2) !important;
+    border-color: $primary-color !important;
   }
 }
 
@@ -484,17 +485,17 @@ p code, li code {
 .nav-list {
   .nav-list-item {
     .nav-list-link {
-      border-radius: 6px;
+      border-radius: $btn-border-radius;
 
       &:hover, &.active {
-        background: #FEF7F5;
-        color: #D97757;
+        background: lighten($primary-color, 45%);
+        color: $primary-color;
       }
     }
 
     &.active {
       .nav-list-link {
-        color: #D97757;
+        color: $primary-color;
       }
     }
   }
@@ -527,27 +528,27 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid $border-color;
 }
 
 // Blockquote Enhancement
 blockquote {
-  border-left: 4px solid #D97757;
-  background: #FEF7F5;
+  border-left: 4px solid $primary-color;
+  background: lighten($primary-color, 45%);
   padding: 1rem 1.25rem;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 $border-radius $border-radius 0;
   margin: 1.5rem 0;
 
   p {
     margin: 0;
-    color: #4B5563;
+    color: $text-grey-dk;
   }
 }
 
 // Image Enhancement
 img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: $border-radius;
 }
 
 // Main Content Width
