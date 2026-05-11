@@ -1,8 +1,14 @@
 ---
 ---
+// jekyll-remote-theme doesn't reliably resolve local _sass imports.
+// Inline the custom colors here to avoid import errors.
 
-// Import custom color scheme
-@import "./custom_colors";
+// Custom Color Scheme - Anthropic-inspired
+$primary-color: #D97757;
+$primary-hover: #BF5E46;
+$text-dark: #111827;
+$text-muted: #6B7280;
+$bg-light: #FEF7F5;
 
 // ============================================
 // Custom Styles for Awesome Claude Skills
