@@ -1,14 +1,7 @@
 ---
 ---
-// jekyll-remote-theme doesn't reliably resolve local _sass imports.
-// Inline the custom colors here to avoid import errors.
-
-// Custom Color Scheme - Anthropic-inspired
-$primary-color: #D97757;
-$primary-hover: #BF5E46;
-$text-dark: #111827;
-$text-muted: #6B7280;
-$bg-light: #FEF7F5;
+// Custom styles for Awesome Claude Skills
+// Note: just-the-docs theme styles are loaded automatically via remote_theme
 
 // ============================================
 // Custom Styles for Awesome Claude Skills
@@ -21,19 +14,19 @@ $bg-light: #FEF7F5;
   margin: -1.5rem -2rem 3rem;
   background: linear-gradient(135deg, #FEF7F5 0%, #FDF2EF 50%, #FDF8F6 100%);
   border-bottom: 1px solid #E5E7EB;
-  
+
   h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #111827;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    
+
     @media (max-width: 768px) {
       font-size: 2rem;
     }
   }
-  
+
   .subtitle {
     font-size: 1.25rem;
     color: #6B7280;
@@ -43,13 +36,13 @@ $bg-light: #FEF7F5;
     margin-right: auto;
     line-height: 1.6;
   }
-  
+
   .badges {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     img {
       height: 22px;
     }
@@ -63,25 +56,25 @@ $bg-light: #FEF7F5;
   gap: 3rem;
   margin: 3rem 0;
   flex-wrap: wrap;
-  
+
   @media (max-width: 768px) {
     gap: 2rem;
   }
-  
+
   .stat-item {
     text-align: center;
-    
+
     .stat-number {
       font-size: 2.5rem;
       font-weight: 700;
       color: #D97757;
       line-height: 1;
-      
+
       @media (max-width: 768px) {
         font-size: 2rem;
       }
     }
-    
+
     .stat-label {
       font-size: 0.875rem;
       color: #6B7280;
@@ -98,19 +91,19 @@ $bg-light: #FEF7F5;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
-  
+
   .feature-card {
     background: #FFFFFF;
     border: 1px solid #E5E7EB;
     border-radius: 12px;
     padding: 1.5rem;
     transition: all 0.2s ease;
-    
+
     &:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
     }
-    
+
     h3 {
       margin-top: 0;
       margin-bottom: 0.75rem;
@@ -119,12 +112,12 @@ $bg-light: #FEF7F5;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      
+
       .icon {
         font-size: 1.25rem;
       }
     }
-    
+
     p {
       color: #6B7280;
       margin: 0;
@@ -140,7 +133,7 @@ $bg-light: #FEF7F5;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
-  
+
   .platform-card {
     background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
     border: 1px solid #E5E7EB;
@@ -148,31 +141,31 @@ $bg-light: #FEF7F5;
     padding: 1.75rem;
     text-align: center;
     transition: all 0.2s ease;
-    
+
     &:hover {
       border-color: #D97757;
       box-shadow: 0 4px 16px rgba(217, 119, 87, 0.12);
     }
-    
+
     h4 {
       margin-top: 0;
       margin-bottom: 0.75rem;
       font-size: 1.25rem;
       color: #111827;
     }
-    
+
     p {
       color: #6B7280;
       margin-bottom: 1rem;
       font-size: 0.9rem;
       line-height: 1.6;
     }
-    
+
     .platform-link {
       color: #D97757;
       font-weight: 500;
       text-decoration: none;
-      
+
       &:hover {
         text-decoration: underline;
       }
@@ -188,19 +181,19 @@ $bg-light: #FEF7F5;
   background: linear-gradient(135deg, #1F1F1F 0%, #2D2D2D 100%);
   color: white;
   border-radius: 0;
-  
+
   h3 {
     color: white;
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
   }
-  
+
   p {
     color: #9CA3AF;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
   }
-  
+
   .cta-button {
     display: inline-block;
     padding: 0.875rem 2rem;
@@ -209,22 +202,22 @@ $bg-light: #FEF7F5;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
-    
+
     &:not(.secondary) {
       background: #D97757;
       color: white;
-      
+
       &:hover {
         background: #BF5E46;
         color: white;
       }
     }
-    
+
     &.secondary {
       background: rgba(255, 255, 255, 0.1);
       color: white;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      
+
       &:hover {
         background: rgba(255, 255, 255, 0.2);
         color: white;
@@ -236,7 +229,7 @@ $bg-light: #FEF7F5;
 // Skill Category Styles (for skills.md)
 .skill-category {
   margin-bottom: 3rem;
-  
+
   .category-header {
     display: flex;
     align-items: center;
@@ -244,18 +237,18 @@ $bg-light: #FEF7F5;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid #E5E7EB;
     margin-bottom: 1.25rem;
-    
+
     .category-icon {
       font-size: 1.75rem;
     }
-    
+
     .category-title {
       margin: 0;
       font-size: 1.5rem;
       color: #111827;
       font-weight: 600;
     }
-    
+
     .category-count {
       background: #F3F4F6;
       padding: 0.25rem 0.75rem;
@@ -273,19 +266,19 @@ $bg-light: #FEF7F5;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1rem;
-  
+
   .skill-card {
     padding: 1.25rem;
     border: 1px solid #E5E7EB;
     border-radius: 10px;
     background: #FFFFFF;
     transition: all 0.2s ease;
-    
+
     &:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       border-color: #D97757;
     }
-    
+
     .skill-name {
       font-weight: 600;
       color: #D97757;
@@ -293,19 +286,19 @@ $bg-light: #FEF7F5;
       display: block;
       margin-bottom: 0.5rem;
       font-size: 1.05rem;
-      
+
       &:hover {
         text-decoration: underline;
       }
     }
-    
+
     .skill-desc {
       font-size: 0.9rem;
       color: #4B5563;
       margin: 0;
       line-height: 1.6;
     }
-    
+
     .skill-author {
       font-size: 0.8rem;
       color: #8B5CF6;
@@ -321,22 +314,22 @@ $bg-light: #FEF7F5;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin: 2rem 0;
-  
+
   p {
     margin: 0;
     color: #92400E;
     font-size: 0.95rem;
     line-height: 1.6;
-    
+
     strong {
       color: #78350F;
     }
   }
-  
+
   a {
     color: #92400E;
     font-weight: 500;
-    
+
     &:hover {
       color: #78350F;
     }
@@ -352,13 +345,13 @@ $bg-light: #FEF7F5;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #E5E7EB;
-  
+
   th, td {
     padding: 1rem 1.25rem;
     text-align: left;
     border-bottom: 1px solid #E5E7EB;
   }
-  
+
   th {
     background: #F9FAFB;
     font-weight: 600;
@@ -367,18 +360,18 @@ $bg-light: #FEF7F5;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
-  
+
   td {
     background: #FFFFFF;
     vertical-align: top;
   }
-  
+
   tr:last-child {
     th, td {
       border-bottom: none;
     }
   }
-  
+
   code {
     background: #F3F4F6;
     padding: 0.2rem 0.4rem;
@@ -391,11 +384,11 @@ $bg-light: #FEF7F5;
 div.highlighter-rouge {
   border-radius: 8px;
   margin: 1.5rem 0;
-  
+
   .highlight {
     border-radius: 8px;
     background: #1F1F1F;
-    
+
     pre {
       padding: 1.25rem;
       background: transparent;
@@ -420,20 +413,20 @@ p code, li code {
   border-radius: 10px;
   padding: 1.25rem;
   margin: 2rem 0;
-  
+
   ul {
     margin: 0;
     padding-left: 1.25rem;
   }
-  
+
   li {
     margin: 0.35rem 0;
   }
-  
+
   a {
     color: #4B5563;
     text-decoration: none;
-    
+
     &:hover {
       color: #D97757;
     }
@@ -445,21 +438,21 @@ p code, li code {
   .footer-content {
     text-align: center;
     padding: 2rem 0;
-    
+
     p {
       margin: 0.5rem 0;
       color: #6B7280;
       font-size: 0.9rem;
-      
+
       a {
         color: #D97757;
-        
+
         &:hover {
           color: #BF5E46;
         }
       }
     }
-    
+
     .footer-original {
       font-size: 0.85rem;
       color: #9CA3AF;
@@ -471,7 +464,7 @@ p code, li code {
 .search-input {
   border-radius: 20px !important;
   padding-left: 1rem !important;
-  
+
   &:focus {
     box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.2) !important;
     border-color: #D97757 !important;
@@ -481,7 +474,7 @@ p code, li code {
 // Site Title Enhancement
 .site-title {
   font-weight: 700 !important;
-  
+
   &:hover {
     background: none !important;
   }
@@ -492,13 +485,13 @@ p code, li code {
   .nav-list-item {
     .nav-list-link {
       border-radius: 6px;
-      
+
       &:hover, &.active {
         background: #FEF7F5;
         color: #D97757;
       }
     }
-    
+
     &.active {
       .nav-list-link {
         color: #D97757;
@@ -520,11 +513,11 @@ p code, li code {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.01em;
-  
+
   a {
     color: inherit;
     text-decoration: none;
-    
+
     &:hover {
       text-decoration: none;
     }
@@ -544,7 +537,7 @@ blockquote {
   padding: 1rem 1.25rem;
   border-radius: 0 8px 8px 0;
   margin: 1.5rem 0;
-  
+
   p {
     margin: 0;
     color: #4B5563;
