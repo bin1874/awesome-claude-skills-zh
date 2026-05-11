@@ -90,6 +90,19 @@ skill-name/
 - GitHub Pages - 托管和部署
 - just-the-docs - Jekyll 主题
 
+### SCSS 样式架构
+
+样式系统采用**单一变量源**模式：
+
+```
+_sass/_variables.scss          ← 唯一变量源（颜色、字体、间距等）
+       ↓
+       ├──→ color_schemes/custom.scss  → just-the-docs 主题使用
+       └──→ assets/css/custom.scss     → 自定义 CSS 样式
+```
+
+**修改颜色**：只需编辑 `_sass/_variables.scss`，所有样式自动同步。
+
 ## 工作流程
 
 ### 创建技能
