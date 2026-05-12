@@ -1,16 +1,7 @@
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Bundler
-Gemfile.lock
-.bundle/
-vendor/
-
-# Node
+# VitePress
 node_modules/
+.vitepress/cache/
+.vitepress/dist/
 
 # OS files
 .DS_Store

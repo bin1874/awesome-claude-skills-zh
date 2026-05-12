@@ -1,7 +1,5 @@
 ---
-layout: default
 title: 资源
-nav_order: 5
 ---
 
 # 资源
@@ -116,7 +114,7 @@ nav_order: 5
 
 ### 模板与示例
 
-- [Skill Creator]({{ '/skills' | relative_url }}) - 创建技能的官方指南
+- [Skill Creator](/skills) - 创建技能的官方指南
 - [Template Skill](../template-skill/SKILL.md) - 最小技能模板
 
 ### 调试与测试

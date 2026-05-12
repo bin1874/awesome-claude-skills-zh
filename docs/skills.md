@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 技能列表
-nav_order: 2
-permalink: /skills
 ---
 
 # 技能列表

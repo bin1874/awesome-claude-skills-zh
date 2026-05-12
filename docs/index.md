@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 首页
-nav_order: 1
-permalink: /
 ---
 
 <div class="hero">
@@ -103,17 +100,17 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���
   <div class="platform-card">
     <h4>🌐 Claude.ai</h4>
     <p>在网页版 Claude 中直接使用技能，从市场添加或上传自定义技能</p>
-    <a href="{{ '/getting-started#claudeai' | relative_url }}" class="platform-link">了解详情 →</a>
+    <a href="/getting-started#claudeai" class="platform-link">了解详情 →</a>
   </div>
   <div class="platform-card">
     <h4>💻 Claude Code</h4>
     <p>本地终端使用的强大 AI 编程助手，将技能放在配置目录即可自动加载</p>
-    <a href="{{ '/getting-started#claude-code' | relative_url }}" class="platform-link">了解详情 →</a>
+    <a href="/getting-started#claude-code" class="platform-link">了解详情 →</a>
   </div>
   <div class="platform-card">
     <h4>🔌 Claude API</h4>
     <p>程序化调用 Claude，通过 API 集成技能到你的应用和工作流</p>
-    <a href="{{ '/getting-started#api' | relative_url }}" class="platform-link">了解详情 →</a>
+    <a href="/getting-started#api" class="platform-link">了解详情 →</a>
   </div>
 </div>
 
@@ -169,8 +166,8 @@ claude --plugin-dir ./connect-apps-plugin
 <div class="cta-section">
   <h3>开始探索</h3>
   <p>发现适合你的技能，提升 Claude 生产力</p>
-  <a href="{{ '/skills' | relative_url }}" class="cta-button">浏览技能列表</a>
-  <a href="{{ '/getting-started' | relative_url }}" class="cta-button secondary">入门指南</a>
+  <a href="/skills" class="cta-button">浏览技能列表</a>
+  <a href="/getting-started" class="cta-button secondary">入门指南</a>
 </div>
 
 ---

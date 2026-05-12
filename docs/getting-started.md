@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 入门指南
-nav_order: 3
-permalink: /getting-started
 ---
 
 # 入门指南
@@ -275,6 +272,6 @@ claude
 
 ## 下一步
 
-- 浏览 [技能列表]({{ '/skills' | relative_url }}) 发现适合你的技能
+- 浏览 [技能列表](/skills) 发现适合你的技能
 - 查看 [GitHub 仓库](https://github.com/LessUp/awesome-claude-skills-zh) 获取所有技能文件
 - 参考 [原项目](https://github.com/ComposioQ/awesome-claude-skills) 获取最新更新

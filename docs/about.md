@@ -1,7 +1,5 @@
 ---
-layout: default
 title: 关于
-nav_order: 6
 ---
 
 # 关于本项目
@@ -101,7 +99,7 @@ limitations under the License.
 - 🐛 Bug 报告
 - 💡 功能建议
 
-查看 [贡献指南]({{ '/contribute' | relative_url }}) 了解详情。
+查看 [贡献指南](/contribute) 了解详情。
 
 ---
 

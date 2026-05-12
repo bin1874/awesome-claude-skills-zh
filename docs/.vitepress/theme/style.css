@@ -1,0 +1,215 @@
+:root {
+  --vp-c-brand-1: #d97706;
+  --vp-c-brand-2: #f59e0b;
+  --vp-c-brand-3: #fbbf24;
+  --vp-c-brand-soft: rgba(217, 119, 6, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #f59e0b;
+  --vp-c-brand-2: #d97706;
+  --vp-c-brand-3: #fbbf24;
+  --vp-c-brand-soft: rgba(245, 158, 11, 0.16);
+}
+
+/* Hero section styles */
+.VPHero .name {
+  font-size: 2.5rem !important;
+}
+
+.VPHero .text {
+  font-size: 1.2rem !important;
+}
+
+/* Custom styles for skill cards */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.skill-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.skill-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.skill-name:hover {
+  text-decoration: underline;
+}
+
+.skill-desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+.skill-author {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-3);
+}
+
+/* Stats section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+}
+
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+/* Features grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.feature-card {
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.feature-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+/* Platform grid */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.platform-card {
+  padding: 1.5rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.platform-card h4 {
+  margin: 0 0 0.75rem;
+}
+
+.platform-card p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+.platform-link {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.platform-link:hover {
+  text-decoration: underline;
+}
+
+/* Translation notice */
+.translation-notice {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  border-left: 4px solid var(--vp-c-brand-1);
+  margin: 1.5rem 0;
+}
+
+.translation-notice p {
+  margin: 0;
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-section h3 {
+  margin: 0 0 0.5rem;
+}
+
+.cta-section p {
+  margin: 0 0 1.5rem;
+  color: var(--vp-c-text-2);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  background: var(--vp-c-brand-1);
+  color: white;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.cta-button.secondary {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+
+.cta-button.secondary:hover {
+  background: var(--vp-c-bg-mute);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
