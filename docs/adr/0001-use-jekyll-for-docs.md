@@ -1,8 +1,8 @@
-# ADR-0001: 使用 Jekyll 和 GitHub Pages 构建文档站点
+# ADR-0001: 使用 VitePress 构建文档站点
 
 ## 状态
 
-已接受
+已接受（替代原有的 Jekyll 方案）
 
 ## 背景
 
@@ -13,34 +13,34 @@
 3. 免费托管 - 降低项目成本
 4. 中文支持 - 本地化需求
 5. 良好的搜索和导航功能
+6. 现代化的开发体验 - 快速的热更新
 
 ## 决策
 
-使用 **Jekyll** 作为静态站点生成器，部署到 **GitHub Pages**，使用 **just-the-docs** 主题。
+使用 **VitePress** 作为静态站点生成器，部署到 **GitHub Pages**，使用默认主题加自定义样式。
 
 ## 理由
 
-### 选择 Jekyll
+### 选择 VitePress
 
-1. **GitHub Pages 原生支持** - 无需额外 CI/CD 配置
-2. **Markdown 优先** - 技能本身就是 Markdown 格式，无缝衔接
-3. **成熟生态** - 丰富的主题和插件
-4. **简单配置** - 一个 `_config.yml` 即可完成大部分配置
+1. **Vue.js 生态** - 基于 Vite 构建，开发体验极佳
+2. **快速热更新** - 开发时即时预览更改
+3. **内置本地搜索** - 无需额外配置
+4. **TypeScript 支持** - 配置文件可类型检查
+5. **Mermaid 图表** - 支持 Mermaid 流程图和图表
+6. **llms.txt 支持** - 生成 AI 友好的文档索引
 
 ### 选择 GitHub Pages
 
 1. **免费托管** - 公开仓库免费使用
-2. **自动部署** - 推送代码后自动构建和部署
+2. **自动部署** - 通过 GitHub Actions 自动构建和部署
 3. **自定义域名支持** - 可配置自定义域名
 4. **与 GitHub 深度集成** - 与项目仓库紧密关联
 
-### 选择 just-the-docs 主题
+### 品牌定制
 
-1. **文档导向设计** - 专为文档站点设计
-2. **内置搜索** - 前端全文搜索，无需后端
-3. **灵活导航** - 支持多级导航和外部链接
-4. **响应式设计** - 移动端友好
-5. **可定制性强** - 支持自定义颜色方案和布局
+- 使用琥珀色作为品牌色（#d97706）
+- 自定义组件样式（skill-card、stats 等）
 
 ## 后果
 
@@ -50,41 +50,29 @@
 - 推送到 main 分支自动部署，无需手动干预
 - 无服务器成本
 - 良好的用户体验（搜索、导航、响应式）
+- 极快的开发体验（热更新）
+- 支持 Mermaid 图表
+- 生成 llms.txt 便于 AI 索引
 
 ### 负面
 
-- GitHub Pages 限制 Jekyll 插件（仅支持白名单插件）
-- 构建时间随内容增长可能变长
-- 自定义主题需要使用 `remote_theme` 配置
+- 需要 Node.js 构建环境
+- 构建产物需要 `.nojekyll` 文件防止 Jekyll 处理
 
-### 风险缓解
+## 迁移历史
 
-- 对于复杂功能需求，评估是否可通过前端实现
-- 监控构建时间，必要时优化内容结构
-- 保持 `remote_theme` 版本固定，避免意外更新
+### 原方案（已废弃）
 
-## 替代方案
+最初使用 Jekyll + just-the-docs 主题，但由于：
+- 开发体验较慢
+- 插件受 GitHub Pages 白名单限制
+- 缺乏现代化工具链支持
 
-### Docusaurus
-
-- 优点：React 生态，功能强大，版本化文档支持
-- 缺点：需要 Node.js 构建环境，配置复杂度高
-- 放弃原因：对于纯文档项目过于复杂
-
-### VuePress
-
-- 优点：Vue 生态，性能好
-- 缺点：需要 Node.js 构建环境
-- 放弃原因：团队更熟悉 Ruby/Jekyll 生态
-
-### MkDocs
-
-- 优点：Python 生态，简单易用
-- 缺点：GitHub Pages 支持不如 Jekyll 原生
-- 放弃原因：需要额外的 CI/CD 配置
+于 2025 年迁移至 VitePress。
 
 ## 参考
 
-- [Jekyll 官方文档](https://jekyllrb.com/)
+- [VitePress 官方文档](https://vitepress.dev/)
 - [GitHub Pages 文档](https://docs.github.com/en/pages)
-- [just-the-docs 主题](https://just-the-docs.github.io/)
+- [vitepress-plugin-mermaid](https://github.com/emersonbottero/vitepress-plugin-mermaid)
+- [vitepress-plugin-llms](https://github.com/okineadev/vitepress-plugin-llms)

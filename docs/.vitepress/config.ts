@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import llmstxt from 'vitepress-plugin-llms'
 
 const rawBase = process.env.VITEPRESS_BASE
 const base = rawBase
@@ -7,7 +9,7 @@ const base = rawBase
     : `/${rawBase}/`
   : '/'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   base,
   title: 'Awesome Claude Skills 中文版',
   description: '精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力',
@@ -61,4 +63,8 @@ export default defineConfig({
       copyright: '由 LessUp 维护 | 原项目: ComposioQ/awesome-claude-skills',
     },
   },
-})
+
+  vite: {
+    plugins: [llmstxt()],
+  },
+}))

@@ -14,3 +14,12 @@ docs/.jekyll-metadata
 # Editor
 .vscode/
 .idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Node.js
+node_modules/
