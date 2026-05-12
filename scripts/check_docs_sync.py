@@ -134,9 +134,9 @@ class DocSyncChecker:
             ))
             return
 
-        # 比较技能列表
-        readme_skills = self._extract_skill_names(readme_path.read_text(encoding='utf-8'))
-        skills_md_skills = self._extract_skill_names(skills_path.read_text(encoding='utf-8'))
+        # 比较技能列表（使用专门的提取方法）
+        readme_skills = self._extract_skills_from_readme(readme_path.read_text(encoding='utf-8'))
+        skills_md_skills = self._extract_skills_from_skills_md(skills_path.read_text(encoding='utf-8'))
 
         # 检查 README 中有但 skills.md 中没有的技能
         missing_in_skills = readme_skills - skills_md_skills
@@ -256,14 +256,64 @@ class DocSyncChecker:
                     ))
 
     def _extract_skill_names(self, content: str) -> set[str]:
-        """从内容中提取技能名称"""
+        """从内容中提取技能名称（通用方法，已弃用，保留向后兼容）
+
+        注意: 此方法已弃用，请使用 _extract_skills_from_readme 或 _extract_skills_from_skills_md
+        """
+        # 同时使用两种方法提取
+        readme_skills = self._extract_skills_from_readme(content)
+        skills_md_skills = self._extract_skills_from_skills_md(content)
+        return readme_skills | skills_md_skills
+
+    def _extract_skills_from_readme(self, content: str) -> set[str]:
+        """从 README.md 提取技能名称
+
+        README.md 格式:
+        - 技能列表在 '## 技能列表' 和 '## 入门指南' 之间
+        - 本地技能: [Name](./name/)
+        - 外部技能: [Name](https://...)
+        - 作者标记: [@username](...) 需要过滤
+        """
         skills = set()
 
-        # 匹配 Markdown 链接中的技能名称
-        for match in re.finditer(r'\[([^\]]+)\]\([^)]*\)', content):
-            skill_name = match.group(1)
-            # 过滤掉非技能名称（如分类标题等）
-            if len(skill_name) > 2 and not skill_name.startswith('#'):
+        # 提取技能列表区域
+        match = re.search(r'## 技能列表.*?(?=## 入门指南)', content, re.DOTALL)
+        if not match:
+            return skills
+
+        skill_section = match.group(0)
+
+        # 提取技能链接
+        # 1. 本地技能: ./skill-name/
+        for match in re.finditer(r'\[([^\]]+)\]\(\./([^/]+)/\)', skill_section):
+            name = match.group(1)
+            # 过滤作者标记
+            if not name.startswith('@'):
+                skills.add(name.lower())
+
+        # 2. 外部技能: https://...
+        for match in re.finditer(r'\[([^\]]+)\]\(https://[^)]+\)', skill_section):
+            name = match.group(1)
+            # 过滤作者标记
+            if not name.startswith('@'):
+                skills.add(name.lower())
+
+        return skills
+
+    def _extract_skills_from_skills_md(self, content: str) -> set[str]:
+        """从 docs/skills.md 提取技能名称
+
+        docs/skills.md 格式:
+        - HTML 技能卡片: <a class="skill-name">Name</a>
+        """
+        skills = set()
+
+        # 匹配 HTML skill-name 类中的技能名称
+        # 支持 class="skill-name" 或 class="xxx skill-name yyy"
+        html_pattern = r'<a[^>]*class="[^"]*skill-name[^"]*"[^>]*>([^<]+)</a>'
+        for match in re.finditer(html_pattern, content):
+            skill_name = match.group(1).strip()
+            if len(skill_name) > 2:
                 skills.add(skill_name.lower())
 
         return skills
