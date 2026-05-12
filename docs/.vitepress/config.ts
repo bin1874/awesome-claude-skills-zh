@@ -13,58 +13,47 @@ export default withMermaid(defineConfig({
   base,
   title: 'Awesome Claude Skills 中文版',
   description: '中文 Claude Skills 高质量索引、实战场景与落地指南',
+  lang: 'zh-CN',
 
   ignoreDeadLinks: [
     /\.\.\/AGENTS/,
   ],
 
-  locales: {
-    zh: {
-      label: '简体中文',
-      lang: 'zh-CN',
-      link: '/zh/',
-      title: 'Awesome Claude Skills 中文版',
-      description: '中文 Claude Skills 高质量索引、实战场景与落地指南',
-      themeConfig: {
-        nav: [
-          { text: '指南', link: '/zh/guides/getting-started', activeMatch: '/zh/guides/' },
-          { text: '技能索引', link: '/zh/skills/', activeMatch: '/zh/skills/' },
-          { text: '实战手册', link: '/zh/playbooks/', activeMatch: '/zh/playbooks/' },
-          { text: '资源导航', link: '/zh/resources', activeMatch: '/zh/resources' },
-          { text: '贡献', link: '/zh/contribute', activeMatch: '/zh/contribute' },
-          { text: '关于', link: '/zh/about', activeMatch: '/zh/about' },
-        ],
-        sidebar: {
-          '/zh/guides/': [
-            {
-              text: '指南',
-              items: [
-                { text: '入门指南', link: '/zh/guides/getting-started' },
-              ],
-            },
-          ],
-          '/zh/skills/': [
-            {
-              text: '技能',
-              items: [
-                { text: '技能索引', link: '/zh/skills/' },
-              ],
-            },
-          ],
-          '/zh/playbooks/': [
-            {
-              text: '实战手册',
-              items: [
-                { text: '概览', link: '/zh/playbooks/' },
-              ],
-            },
+  themeConfig: {
+    nav: [
+      { text: '指南', link: '/guides/getting-started', activeMatch: '/guides/' },
+      { text: '技能索引', link: '/skills/', activeMatch: '/skills/' },
+      { text: '实战手册', link: '/playbooks/', activeMatch: '/playbooks/' },
+      { text: '资源导航', link: '/resources' },
+      { text: '贡献', link: '/contribute' },
+      { text: '关于', link: '/about' },
+    ],
+    sidebar: {
+      '/guides/': [
+        {
+          text: '指南',
+          items: [
+            { text: '入门指南', link: '/guides/getting-started' },
           ],
         },
-      },
+      ],
+      '/skills/': [
+        {
+          text: '技能',
+          items: [
+            { text: '技能索引', link: '/skills/' },
+          ],
+        },
+      ],
+      '/playbooks/': [
+        {
+          text: '实战手册',
+          items: [
+            { text: '概览', link: '/playbooks/' },
+          ],
+        },
+      ],
     },
-  },
-
-  themeConfig: {
     outline: [2, 3],
     search: { provider: 'local' },
     socialLinks: [

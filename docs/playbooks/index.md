@@ -25,11 +25,11 @@ title: 实战手册
   </div>
   <div class="playbook-card">
     <h3>第 2 步：在技能索引中选 2-3 个技能</h3>
-    <p>去 <a href="/zh/skills/">技能索引</a> 按关键词筛选，优先选一个“主技能”加一到两个“补位技能”。</p>
+    <p>去 <a href="/skills/">技能索引</a> 按关键词筛选，优先选一个“主技能”加一到两个“补位技能”。</p>
   </div>
   <div class="playbook-card">
     <h3>第 3 步：按平台安装并验证</h3>
-    <p>在 <a href="/zh/guides/getting-started">入门指南</a> 选择 Claude.ai、Claude Code 或 API 路径，先跑一个最小示例。</p>
+    <p>在 <a href="/guides/getting-started">入门指南</a> 选择 Claude.ai、Claude Code 或 API 路径，先跑一个最小示例。</p>
   </div>
   <div class="playbook-card">
     <h3>第 4 步：复盘可复用模板</h3>
@@ -86,7 +86,7 @@ title: 实战手册
 |:---|:---|:---|
 | 技能来源统一 | 统一维护技能清单（本仓库 + 白名单外部技能） | 降低不可信来源风险 |
 | 版本与链接校验 | 在 CI 中校验技能链接是否有效 | 避免文档可点但实际 404 |
-| 贡献流程标准化 | 通过 [贡献指南](/zh/contribute) 统一 PR 要求 | 减少重复沟通成本 |
+| 贡献流程标准化 | 通过 [贡献指南](/contribute) 统一 PR 要求 | 减少重复沟通成本 |
 | 场景模板沉淀 | 每条业务场景至少沉淀 1 份模板 | 新成员可快速接手 |
 
 ## 高频场景模板（开箱即用）
@@ -111,6 +111,6 @@ title: 实战手册
 
 ## 继续深入
 
-- 想先解决安装和平台差异：看 [入门指南](/zh/guides/getting-started)
-- 想直接筛技能并查看链接：看 [技能索引](/zh/skills/)
-- 想扩展更多官方与社区资源：看 [资源导航](/zh/resources)
+- 想先解决安装和平台差异：看 [入门指南](/guides/getting-started)
+- 想直接筛技能并查看链接：看 [技能索引](/skills/)
+- 想扩展更多官方与社区资源：看 [资源导航](/resources)

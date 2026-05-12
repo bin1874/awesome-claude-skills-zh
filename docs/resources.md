@@ -114,7 +114,7 @@ title: 资源
 
 ### 模板与示例
 
-- [Skill Creator](/zh/skills/#development) - 在技能索引中查看 Skill Creator 与开发类技能
+- [Skill Creator](/skills/#development) - 在技能索引中查看 Skill Creator 与开发类技能
 - [Template Skill](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/template-skill) - 最小技能模板
 
 ### 调试与测试
