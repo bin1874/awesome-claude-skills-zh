@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs"
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -426,6 +426,12 @@ function main() {
     const readmeText = readFileSync(readmePath, "utf-8")
     const readmeIndex = parseReadmeIndex(readmeText)
     const { output, stats } = buildSkillsData(config, readmeIndex)
+
+    // 确保输出目录存在
+    const outputDir = path.dirname(outputPath)
+    if (!existsSync(outputDir)) {
+      mkdirSync(outputDir, { recursive: true })
+    }
 
     writeFileSync(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf-8")
 
