@@ -200,7 +200,7 @@
   color: var(--vp-c-text-2);
 }
 
-.cta-button {
+.cta-section .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -212,16 +212,16 @@
   transition: background 0.2s;
 }
 
-.cta-button:hover {
+.cta-section .cta-button:hover {
   background: var(--vp-c-brand-2);
 }
 
-.cta-button.secondary {
+.cta-section .cta-button.secondary {
   background: var(--vp-c-bg-soft);
   color: var(--vp-c-text-1);
 }
 
-.cta-button.secondary:hover {
+.cta-section .cta-button.secondary:hover {
   background: var(--vp-c-bg-mute);
 }
 
