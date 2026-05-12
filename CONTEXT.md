@@ -86,22 +86,23 @@ skill-name/
 - YAML - 技能元数据 frontmatter
 
 **文档站点**：
-- Jekyll - 静态站点生成器
+- VitePress - 静态站点生成器（Vue.js 生态）
 - GitHub Pages - 托管和部署
-- just-the-docs - Jekyll 主题
+- vitepress-plugin-mermaid - Mermaid 图表支持
+- vitepress-plugin-llms - AI 索引生成（llms.txt）
 
-### SCSS 样式架构
+### VitePress 主题定制
 
-样式系统采用**单一变量源**模式：
+主题样式采用 **CSS 变量覆盖** 模式：
 
 ```
-_sass/_variables.scss          ← 唯一变量源（颜色、字体、间距等）
-       ↓
-       ├──→ color_schemes/custom.scss  → just-the-docs 主题使用
-       └──→ assets/css/custom.scss     → 自定义 CSS 样式
+docs/.vitepress/theme/
+├── index.ts          # 主题入口，注册自定义组件
+├── style.css         # 自定义样式（品牌色、字体、布局）
+└── components/       # 自定义 Vue 组件
 ```
 
-**修改颜色**：只需编辑 `_sass/_variables.scss`，所有样式自动同步。
+**修改品牌色**：编辑 `style.css` 中的 CSS 变量（如 `--vp-c-brand-1`）。
 
 ## 工作流程
 
