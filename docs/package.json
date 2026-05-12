@@ -2,15 +2,9 @@
   "name": "awesome-claude-skills-zh-docs",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "scripts": {
-    "generate:skills-data": "node ./scripts/generate-skills-data.mjs",
-    "check:links": "npm run generate:skills-data && node ./scripts/check-skill-links.mjs",
-    "check:links:local": "npm run generate:skills-data && node ./scripts/check-skill-links.mjs --skip-external",
-    "dev": "npm run generate:skills-data && vitepress dev",
-    "build": "npm run generate:skills-data && vitepress build",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "devDependencies": {

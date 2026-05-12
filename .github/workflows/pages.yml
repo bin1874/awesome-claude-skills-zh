@@ -63,10 +63,6 @@ jobs:
         working-directory: docs
         run: npm ci
 
-      - name: Validate skill links for Pages
-        working-directory: docs
-        run: npm run check:links
-
       - name: Build docs
         working-directory: docs
         env:

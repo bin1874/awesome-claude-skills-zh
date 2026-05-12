@@ -269,6 +269,6 @@ claude
 
 ## 下一步
 
-- 浏览 [技能列表](/skills) 发现适合你的技能
+- 浏览 [技能列表](/zh/skills/) 发现适合你的技能
 - 查看 [GitHub 仓库](https://github.com/LessUp/awesome-claude-skills-zh) 获取所有技能文件
 - 参考 [原项目](https://github.com/ComposioQ/awesome-claude-skills) 获取最新更新
