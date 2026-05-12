@@ -1,22 +1,28 @@
 ---
-title: 首页
+layout: home
+hero:
+  name: 🧩 Awesome Claude Skills
+  text: 精选的 Claude Skills 列表
+  tagline: 提升 Claude.ai、Claude Code 和 Claude API 的生产力
+  actions:
+    - theme: brand
+      text: 浏览技能列表
+      link: /skills
+    - theme: alt
+      text: 入门指南
+      link: /getting-started
 ---
 
-<div class="hero">
-  <h1>🧩 Awesome Claude Skills</h1>
-  <p class="subtitle">精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力</p>
-  <div class="badges">
-    <img src="https://awesome.re/badge.svg" alt="Awesome">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
-    <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square" alt="License">
-  </div>
+<div class="badges" style="text-align: center; margin-top: -1rem;">
+  <img src="https://awesome.re/badge.svg" alt="Awesome">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square" alt="License">
 </div>
 
-<div class="translation-notice">
+<div class="translation-notice" style="margin: 1.5rem 0;">
   <p>
-    <strong>📖 中文翻译版本</strong><br>
-    本项目是 <a href="https://github.com/ComposioQ/awesome-claude-skills" target="_blank">awesome-claude-skills</a> 的中文翻译版本，
-    旨在为中文开发者社区提供 Claude Skills 的本地化资源。
+    <strong>📖 中文翻译版本</strong> — 本项目是 <a href="https://github.com/ComposioQ/awesome-claude-skills" target="_blank">awesome-claude-skills</a> 的中文翻译版本，
+    为中文开发者社区提供 Claude Skills 的本地化资源。
   </p>
 </div>
 
@@ -24,13 +30,11 @@ title: 首页
 
 **Claude Skills** 是可定制的工作流程，教会 Claude 根据你的独特需求执行特定任务。
 
-Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���的方式执行任务：
+Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准化的方式执行任务：
 
 - **Claude.ai** — 网页版对话中的智能助手
-- **Claude Code** — 本地终端的 AI 编程伙伴  
+- **Claude Code** — 本地终端的 AI 编程伙伴
 - **Claude API** — 程序化调用的 AI 能力
-
----
 
 ## 数据统计
 
@@ -52,8 +56,6 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���
     <div class="stat-label">支持平台</div>
   </div>
 </div>
-
----
 
 ## 技能分类
 
@@ -92,8 +94,6 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���
   </div>
 </div>
 
----
-
 ## 支持平台
 
 <div class="platform-grid">
@@ -114,8 +114,6 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���
   </div>
 </div>
 
----
-
 ## 热门技能
 
 | 技能 | 描述 | 分类 |
@@ -127,8 +125,6 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准���
 | **Brand Guidelines** | 将 Anthropic 品牌颜色和字体应用到 artifacts | 商业营销 |
 | **File Organizer** | 智能组织文件和文件夹 | 生产力 |
 | **Connect Apps** | 连接 500+ 应用执行真实操作 | 应用自动化 |
-
----
 
 ## 快速开始
 
@@ -160,17 +156,6 @@ claude --plugin-dir ./connect-apps-plugin
 ```
 
 在 [platform.composio.dev](https://platform.composio.dev) 获取免费 API 密钥，让 Claude 能够发送邮件、创建 Issue、发布到 Slack 等。
-
----
-
-<div class="cta-section">
-  <h3>开始探索</h3>
-  <p>发现适合你的技能，提升 Claude 生产力</p>
-  <a href="/skills" class="cta-button">浏览技能列表</a>
-  <a href="/getting-started" class="cta-button secondary">入门指南</a>
-</div>
-
----
 
 ## 关于本翻译
 
