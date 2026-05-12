@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "repo": "LessUp/awesome-claude-skills-zh",
+    "repoBranch": "master",
+    "strategy": "curated-from-category-config",
+    "generatedFrom": {
+      "readme": "README.md",
+      "categoryConfig": "scripts/skill_categories.json"
+    }
+  },
+  "categories": [
+    {
+      "id": "documents",
+      "emoji": "📄",
+      "name": "文档处理",
+      "skills": [
+        {
+          "name": "document-skills",
+          "description": "Anthropic 官方文档处理技能的中文翻译版本，包含 Word、PDF、PowerPoint、Excel 文档的创建、编辑和分析能力。",
+          "source": "local",
+          "path": "document-skills"
+        },
+        {
+          "name": "docx",
+          "description": "创建、编辑、分析 Word 文档，支持修订追踪、批注、格式化。",
+          "source": "external",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/docx"
+        },
+        {
+          "name": "pdf",
+          "description": "提取文本、表格、元数据，合并与批注 PDF。",
+          "source": "external",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/pdf"
+        },
+        {
+          "name": "pptx",
+          "description": "读取、生成和调整幻灯片、布局、模板。",
+          "source": "external",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/pptx"
+        },
+        {
+          "name": "xlsx",
+          "description": "电子表格操作：公式、图表、数据转换。",
+          "source": "external",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
+        },
+        {
+          "name": "Markdown to EPUB Converter",
+          "description": "将 Markdown 文档和聊天摘要转换为专业的 EPUB 电子书文件。",
+          "source": "external",
+          "url": "https://github.com/smerchek/claude-epub-skill",
+          "author": "@smerchek"
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "emoji": "💻",
+      "name": "开发与代码工具",
+      "skills": [
+        {
+          "name": "artifacts-builder",
+          "description": "使用现代前端 Web 技术（React、Tailwind CSS、shadcn/ui）创建复杂多组件 claude.ai HTML artifacts 的工具套件。用于需要状态管理、路由或 shadcn/ui 组件的复杂 artifacts - 不适用于简单的单文件 HTML/JSX artifacts。",
+          "source": "local",
+          "path": "artifacts-builder"
+        },
+        {
+          "name": "Changelog Generator",
+          "description": "通过分析历史记录并将技术提交转换为客户友好的发布说明,自动从 git 提交创建面向用户的变更日志。",
+          "source": "local",
+          "path": "changelog-generator"
+        },
+        {
+          "name": "LangSmith Fetch",
+          "description": "通过自动获取和分析 LangSmith Studio 的执行跟踪来调试 LangChain 和 LangGraph 代理。Claude Code 的首个 AI 可观测性技能。",
+          "source": "local",
+          "path": "langsmith-fetch",
+          "author": "@OthmanAdi"
+        },
+        {
+          "name": "MCP Builder",
+          "description": "指导创建高质量的 MCP(模型上下文协议)服务器,使用 Python 或 TypeScript 将外部 API 和服务与 LLM 集成。",
+          "source": "local",
+          "path": "mcp-builder"
+        },
+        {
+          "name": "Skill Creator",
+          "description": "提供创建有效 Claude Skills 的指导,通过专业知识、工作流和工具集成扩展能力。",
+          "source": "local",
+          "path": "skill-creator"
+        },
+        {
+          "name": "Connect",
+          "description": "将 Claude 连接到任何应用。发送邮件、创建 Issue、发布消息、更新数据库 - 在 Gmail、Slack、GitHub、Notion 和 1000+ 服务中执行真实操作。",
+          "source": "local",
+          "path": "connect"
+        },
+        {
+          "name": "Webapp Testing",
+          "description": "使用 Playwright 测试本地 Web 应用,验证前端功能、调试 UI 行为并捕获截图。",
+          "source": "local",
+          "path": "webapp-testing"
+        },
+        {
+          "name": "aws-skills",
+          "description": "AWS 开发，包含 CDK 最佳实践、成本优化 MCP 服务器，以及无服务器/事件驱动架构模式。",
+          "source": "external",
+          "url": "https://github.com/zxkane/aws-skills"
+        },
+        {
+          "name": "Claude Code Terminal Title",
+          "description": "为每个 Claude-Code 终端窗口设置动态标题，描述正在进行的工作。",
+          "source": "external",
+          "url": "https://github.com/bluzername/claude-code-terminal-title"
+        },
+        {
+          "name": "D3.js Visualization",
+          "description": "教会 Claude 生成 D3 图表和交互式数据可视化。",
+          "source": "external",
+          "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+          "author": "@chrisvoncsefalvay"
+        },
+        {
+          "name": "FFUF Web Fuzzing",
+          "description": "集成 ffuf Web 模糊测试工具，让 Claude 可以运行模糊测试任务并分析漏洞结果。",
+          "source": "external",
+          "url": "https://github.com/jthack/ffuf_claude_skill",
+          "author": "@jthack"
+        },
+        {
+          "name": "iOS Simulator",
+          "description": "让 Claude 能够与 iOS 模拟器交互，用于测试和调试 iOS 应用。",
+          "source": "external",
+          "url": "https://github.com/conorluddy/ios-simulator-skill",
+          "author": "@conorluddy"
+        },
+        {
+          "name": "jules",
+          "description": "将编码任务委托给 Google Jules AI 智能体。",
+          "source": "external",
+          "url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/jules",
+          "author": "@sanjay3290"
+        }
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "emoji": "📊",
+      "name": "数据与分析",
+      "skills": [
+        {
+          "name": "developer-growth-analysis",
+          "description": "分析你最近的 Claude Code 聊天历史，识别编码模式、开发差距和改进领域，从 HackerNews 精选相关学习资源，并自动将个性化成长报告发送到你的 Slack 私信。",
+          "source": "local",
+          "path": "developer-growth-analysis"
+        }
+      ]
+    },
+    {
+      "id": "business-marketing",
+      "emoji": "📈",
+      "name": "商业与营销",
+      "skills": [
+        {
+          "name": "Brand Guidelines",
+          "description": "将 Anthropic 官方品牌颜色和字体应用于 artifacts,确保一致的视觉识别和专业设计标准。",
+          "source": "local",
+          "path": "brand-guidelines"
+        },
+        {
+          "name": "Competitive Ads Extractor",
+          "description": "从广告库中提取和分析竞争对手的广告,了解引起共鸣的消息传递和创意方法。",
+          "source": "local",
+          "path": "competitive-ads-extractor"
+        },
+        {
+          "name": "Domain Name Brainstormer",
+          "description": "生成创意域名想法,并检查多个 TLD(包括 .com、.io、.dev 和 .ai 扩展名)的可用性。",
+          "source": "local",
+          "path": "domain-name-brainstormer"
+        },
+        {
+          "name": "Internal Comms",
+          "description": "帮助编写内部沟通内容,包括第三方更新、公司通讯、常见问题、状态报告和项目更新,使用公司特定格式。",
+          "source": "local",
+          "path": "internal-comms"
+        },
+        {
+          "name": "Lead Research Assistant",
+          "description": "通过分析产品、搜索目标公司并提供可执行的推广策略,识别和筛选高质量潜在客户。",
+          "source": "local",
+          "path": "lead-research-assistant"
+        }
+      ]
+    },
+    {
+      "id": "communication-writing",
+      "emoji": "💬",
+      "name": "沟通与写作",
+      "skills": [
+        {
+          "name": "Content Research Writer",
+          "description": "通过进行研究、添加引用、改进开头和提供分段反馈来协助编写高质量内容。",
+          "source": "local",
+          "path": "content-research-writer"
+        },
+        {
+          "name": "Meeting Insights Analyzer",
+          "description": "分析会议记录,揭示行为模式,包括冲突回避、发言比例、填充词和领导风格。",
+          "source": "local",
+          "path": "meeting-insights-analyzer"
+        },
+        {
+          "name": "Twitter Algorithm Optimizer",
+          "description": "使用 Twitter 开源算法洞察分析和优化推文,实现最大触达。重写和编辑推文以提高参与度和可见性。",
+          "source": "local",
+          "path": "twitter-algorithm-optimizer"
+        }
+      ]
+    },
+    {
+      "id": "creative-media",
+      "emoji": "🎨",
+      "name": "创意与媒体",
+      "skills": [
+        {
+          "name": "Canvas Design",
+          "description": "使用设计理念和美学原则在 PNG 和 PDF 文档中创建精美的视觉艺术,用于海报、设计和静态作品。",
+          "source": "local",
+          "path": "canvas-design"
+        },
+        {
+          "name": "Image Enhancer",
+          "description": "通过提高分辨率、清晰度和清晰度来改善图像和截图质量,用于专业演示和文档。",
+          "source": "local",
+          "path": "image-enhancer"
+        },
+        {
+          "name": "Slack GIF Creator",
+          "description": "创建为 Slack 优化的动画 GIF,具有大小约束验证器和可组合动画原语。",
+          "source": "local",
+          "path": "slack-gif-creator"
+        },
+        {
+          "name": "Theme Factory",
+          "description": "将专业字体和颜色主题应用于 artifacts,包括幻灯片、文档、报告和 HTML 落地页,提供 10 个预设主题。",
+          "source": "local",
+          "path": "theme-factory"
+        },
+        {
+          "name": "Video Downloader",
+          "description": "从 YouTube 和其他平台下载视频,用于离线观看、编辑或存档,支持各种格式和质量选项。",
+          "source": "local",
+          "path": "video-downloader"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "emoji": "⚡",
+      "name": "生产力与组织",
+      "skills": [
+        {
+          "name": "File Organizer",
+          "description": "通过理解上下文、查找重复项和 suggesting 更好的组织结构,智能组织文件和文件夹。",
+          "source": "local",
+          "path": "file-organizer"
+        },
+        {
+          "name": "Invoice Organizer",
+          "description": "通过读取文件、提取信息和一致性重命名,自动组织发票和收据以进行税务准备。",
+          "source": "local",
+          "path": "invoice-organizer"
+        },
+        {
+          "name": "Raffle Winner Picker",
+          "description": "从列表、电子表格或 Google Sheets 中随机选择赠品和竞赛的获奖者,使用加密安全的随机性。",
+          "source": "local",
+          "path": "raffle-winner-picker"
+        },
+        {
+          "name": "Tailored Resume Generator",
+          "description": "分析职位描述并生成定制简历,突出相关经验、技能和成就,最大化面试机会。",
+          "source": "local",
+          "path": "tailored-resume-generator"
+        }
+      ]
+    },
+    {
+      "id": "collaboration",
+      "emoji": "🤝",
+      "name": "协作与项目管理",
+      "skills": [
+        {
+          "name": "skill-share",
+          "description": "创建新的 Claude 技能并使用 Rube 自动在 Slack 上分享，实现无缝团队协作和技能发现。",
+          "source": "local",
+          "path": "skill-share"
+        }
+      ]
+    },
+    {
+      "id": "automation-composio",
+      "emoji": "🔌",
+      "name": "应用自动化 (Composio)",
+      "skills": [
+        {
+          "name": "connect-apps",
+          "description": "将 Claude 连接到 Gmail、Slack、GitHub 等外部应用。当用户想要发送邮件、创建 issue、发布消息或在外部服务中执行操作时使用此技能。",
+          "source": "local",
+          "path": "connect-apps"
+        },
+        {
+          "name": "Composio Skills Catalog",
+          "description": "自动化技能全集（当前收录 832 个应用技能目录）",
+          "source": "external",
+          "url": "https://github.com/LessUp/awesome-claude-skills-zh/tree/master/composio-skills"
+        }
+      ]
+    }
+  ]
+}

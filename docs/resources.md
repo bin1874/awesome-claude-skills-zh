@@ -114,13 +114,13 @@ title: 资源
 
 ### 模板与示例
 
-- [Skill Creator](/skills) - 创建技能的官方指南
-- [Template Skill](../template-skill/SKILL.md) - 最小技能模板
+- [Skill Creator](/skills#development) - 在技能索引中查看 Skill Creator 与开发类技能
+- [Template Skill](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/template-skill) - 最小技能模板
 
 ### 调试与测试
 
-- [LangSmith Fetch](https://github.com/LessUp/awesome-claude-skills-zh/tree/main/langsmith-fetch) - 调试 LangChain/LangGraph 智能体
-- [Webapp Testing](https://github.com/LessUp/awesome-claude-skills-zh/tree/main/webapp-testing) - 使用 Playwright 测试 Web 应用
+- [LangSmith Fetch](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/langsmith-fetch) - 调试 LangChain/LangGraph 智能体
+- [Webapp Testing](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/webapp-testing) - 使用 Playwright 测试 Web 应用
 
 ---
 

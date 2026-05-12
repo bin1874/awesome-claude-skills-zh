@@ -1,134 +1,118 @@
 ---
 layout: home
 hero:
-  name: 🧩 Awesome Claude Skills
-  text: 精选的 Claude Skills 列表
-  tagline: 提升 Claude.ai、Claude Code 和 Claude API 的生产力
+  name: Awesome Claude Skills 中文版
+  text: 不只是技能仓库，更是 AI 执行工作流手册
+  tagline: 面向 Claude.ai、Claude Code、Claude API 的中文落地资料站，聚焦真实场景、组合策略与执行模板。
   actions:
     - theme: brand
-      text: 浏览技能列表
+      text: 打开技能索引
       link: /skills
     - theme: alt
-      text: 入门指南
-      link: /getting-started
+      text: 查看实战手册
+      link: /playbooks
 ---
 
-<div class="badges" style="text-align: center; margin-top: -1rem;">
-  <img src="https://awesome.re/badge.svg" alt="Awesome">
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
-  <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square" alt="License">
-</div>
-
-<div class="translation-notice" style="margin: 1.5rem 0;">
-  <p>
-    <strong>📖 中文翻译版本</strong> — 本项目是 <a href="https://github.com/ComposioQ/awesome-claude-skills" target="_blank">awesome-claude-skills</a> 的中文翻译版本，
-    为中文开发者社区提供 Claude Skills 的本地化资源。
-  </p>
-</div>
-
-## 什么是 Claude Skills？
-
-**Claude Skills** 是可定制的工作流程，教会 Claude 根据你的独特需求执行特定任务。
-
-Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准化的方式执行任务：
-
-- **Claude.ai** — 网页版对话中的智能助手
-- **Claude Code** — 本地终端的 AI 编程伙伴
-- **Claude API** — 程序化调用的 AI 能力
-
-## 数据统计
-
-<div class="stats">
-  <div class="stat-item">
-    <div class="stat-number">860+</div>
-    <div class="stat-label">精选技能</div>
+<div class="home-signal-strip">
+  <div class="signal-item">
+    <div class="signal-value">70</div>
+    <div class="signal-label">精选技能索引</div>
   </div>
-  <div class="stat-item">
-    <div class="stat-number">10</div>
-    <div class="stat-label">分类领域</div>
+  <div class="signal-item">
+    <div class="signal-value">10</div>
+    <div class="signal-label">场景分类</div>
   </div>
-  <div class="stat-item">
-    <div class="stat-number">500+</div>
-    <div class="stat-label">应用集成</div>
+  <div class="signal-item">
+    <div class="signal-value">27</div>
+    <div class="signal-label">本仓库可直接复用</div>
   </div>
-  <div class="stat-item">
-    <div class="stat-number">3</div>
-    <div class="stat-label">支持平台</div>
+  <div class="signal-item">
+    <div class="signal-value">43</div>
+    <div class="signal-label">外部优质技能链接</div>
   </div>
 </div>
 
-## 技能分类
+## 这个站点解决什么问题
 
-<div class="features">
-  <div class="feature-card">
-    <h3><span class="icon">📄</span> 文档处理</h3>
-    <p>Word、PDF、PPT、Excel 文档的创建、编辑和分析，以及 EPUB 电子书转换</p>
+很多技能站点停留在“目录展示”。这里重点解决的是执行落地：如何从任务目标出发，快速找到技能组合、安装路径和验证方式。
+
+<div class="insight-grid">
+  <div class="insight-card">
+    <h3>任务导向，而非工具导向</h3>
+    <p>围绕“写发布内容、做测试、自动化运营、研究分析”等任务组织，不需要先知道技能名字。</p>
   </div>
-  <div class="feature-card">
-    <h3><span class="icon">💻</span> 开发工具</h3>
-    <p>MCP Builder、Webapp Testing、Git 工作流、代码质量分析等开发利器</p>
+  <div class="insight-card">
+    <h3>组合优先，而非单技能崇拜</h3>
+    <p>强调“技能链路”，例如先研究再产出、先结构化再自动化，降低试错成本。</p>
   </div>
-  <div class="feature-card">
-    <h3><span class="icon">📊</span> 数据分析</h3>
-    <p>CSV 处理、PostgreSQL 查询、深度研究助手、数据可视化</p>
-  </div>
-  <div class="feature-card">
-    <h3><span class="icon">📈</span> 商业营销</h3>
-    <p>品牌指南、竞品广告分析、线索研究、域名创意、内部沟通</p>
-  </div>
-  <div class="feature-card">
-    <h3><span class="icon">💬</span> 沟通写作</h3>
-    <p>内容研究、会议分析、Twitter 优化、头脑风暴、NotebookLM 集成</p>
-  </div>
-  <div class="feature-card">
-    <h3><span class="icon">🎨</span> 创意媒体</h3>
-    <p>图像增强、GIF 创建、视频下载、Canvas 设计、主题应用</p>
-  </div>
-  <div class="feature-card">
-    <h3><span class="icon">⚡</span> 生产力</h3>
-    <p>文件组织、发票整理、简历生成、n8n 工作流、持续改进</p>
-  </div>
-  <div class="feature-card">
-    <h3><span class="icon">🔌</span> 应用自动化</h3>
-    <p>通过 Composio 连接 500+ SaaS 应用，实现真实操作</p>
+  <div class="insight-card">
+    <h3>可验证，而非玄学经验</h3>
+    <p>提供链接检查与页面索引策略，让你拿到技能后能快速验证可用性与来源可信度。</p>
   </div>
 </div>
 
-## 支持平台
+## 三条使用路径
 
-<div class="platform-grid">
-  <div class="platform-card">
-    <h4>🌐 Claude.ai</h4>
-    <p>在网页版 Claude 中直接使用技能，从市场添加或上传自定义技能</p>
-    <a href="/getting-started#claudeai" class="platform-link">了解详情 →</a>
+<div class="path-grid">
+  <a class="path-card" href="/playbooks#path-quick-start">
+    <h3>01 新手 30 分钟上手</h3>
+    <p>从安装、挑选到首个输出结果，覆盖 Claude.ai、Claude Code、API 三条入口。</p>
+  </a>
+  <a class="path-card" href="/playbooks#path-build-system">
+    <h3>02 搭建个人技能系统</h3>
+    <p>按长期场景建立技能池，形成可复用 SOP，而不是每次临时找技能。</p>
+  </a>
+  <a class="path-card" href="/playbooks#path-team-collab">
+    <h3>03 团队协作与共享</h3>
+    <p>统一技能来源、版本与贡献流程，让团队内复用一致、迭代可追踪。</p>
+  </a>
+</div>
+
+## 推荐执行顺序
+
+<div class="execution-board">
+  <div class="execution-step">
+    <strong>第 1 步：</strong> 通过 <a href="/skills">技能索引</a> 用关键词锁定候选技能（2-5 个即可）。
   </div>
-  <div class="platform-card">
-    <h4>💻 Claude Code</h4>
-    <p>本地终端使用的强大 AI 编程助手，将技能放在配置目录即可自动加载</p>
-    <a href="/getting-started#claude-code" class="platform-link">了解详情 →</a>
+  <div class="execution-step">
+    <strong>第 2 步：</strong> 进入 <a href="/playbooks">实战手册</a> 选择与你任务匹配的组合路径。
   </div>
-  <div class="platform-card">
-    <h4>🔌 Claude API</h4>
-    <p>程序化调用 Claude，通过 API 集成技能到你的应用和工作流</p>
-    <a href="/getting-started#api" class="platform-link">了解详情 →</a>
+  <div class="execution-step">
+    <strong>第 3 步：</strong> 在 <a href="/getting-started">入门指南</a> 按平台安装并验证可用性。
+  </div>
+  <div class="execution-step">
+    <strong>第 4 步：</strong> 用 <a href="/resources">资源导航</a> 扩展到官方文档、社区案例和集成平台。
   </div>
 </div>
 
-## 热门技能
+## 热门组合（可直接开干）
 
-| 技能 | 描述 | 分类 |
-|:---|:---|:---|
-| **MCP Builder** | 创建高质量的 MCP 服务器，支持 Python 或 TypeScript | 开发工具 |
-| **Skill Creator** | 创建有效 Claude Skills 的指导工具 | 开发工具 |
-| **Content Research Writer** | 撰写高质量内容，自动研究和引用 | 沟通写作 |
-| **Canvas Design** | 创建精美的视觉艺术、海报和设计 | 创意媒体 |
-| **Brand Guidelines** | 将 Anthropic 品牌颜色和字体应用到 artifacts | 商业营销 |
-| **File Organizer** | 智能组织文件和文件夹 | 生产力 |
-| **Connect Apps** | 连接 500+ 应用执行真实操作 | 应用自动化 |
+<div class="spotlight-grid">
+  <div class="spotlight-card">
+    <h3>内容生产链路</h3>
+    <p>Content Research Writer + article-extractor + NotebookLM Integration</p>
+    <a href="/skills#communication-writing">查看对应分类 →</a>
+  </div>
+  <div class="spotlight-card">
+    <h3>开发提效链路</h3>
+    <p>MCP Builder + Webapp Testing + test-driven-development</p>
+    <a href="/skills#development">查看对应分类 →</a>
+  </div>
+  <div class="spotlight-card">
+    <h3>商业分析链路</h3>
+    <p>Competitive Ads Extractor + deep-research + Lead Research Assistant</p>
+    <a href="/skills#business-marketing">查看对应分类 →</a>
+  </div>
+  <div class="spotlight-card">
+    <h3>自动化执行链路</h3>
+    <p>Connect + Connect Apps + Slack / GitHub / Notion 等应用工具链</p>
+    <a href="/skills#automation-composio">查看对应分类 →</a>
+  </div>
+</div>
 
-<div class="cta-section">
-  <h3>开始使用 Claude Skills</h3>
-  <p>浏览技能列表或查看入门指南，立即提升你的 Claude 使用体验</p>
-  <a href="/getting-started" class="cta-button">入门指南</a>
-  <a href="/skills" class="cta-button secondary">浏览全部技能</a>
+<div class="home-cta">
+  <h3>先从一个真实任务开始，而不是先读完所有文档</h3>
+  <p>如果你今天只做一件事：选一个任务，按实战手册跑通第一条技能链路。</p>
+  <a href="/playbooks">进入实战手册</a>
+  <a href="/skills">浏览技能索引</a>
 </div>

@@ -1,19 +1,21 @@
-import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
-import llmstxt from 'vitepress-plugin-llms'
+import { defineConfig } from "vitepress"
+import { withMermaid } from "vitepress-plugin-mermaid"
+import llmstxt from "vitepress-plugin-llms"
 
 const rawBase = process.env.VITEPRESS_BASE
 const base = rawBase
-  ? rawBase.startsWith('/')
-    ? rawBase.endsWith('/') ? rawBase : `${rawBase}/`
+  ? rawBase.startsWith("/")
+    ? rawBase.endsWith("/") ? rawBase : `${rawBase}/`
     : `/${rawBase}/`
-  : '/'
+  : "/"
 
 export default withMermaid(defineConfig({
   base,
-  title: 'Awesome Claude Skills 中文版',
-  description: '精选的实用 Claude Skills 列表，提升 Claude.ai、Claude Code 和 Claude API 的生产力',
-  lang: 'zh-CN',
+  title: "Awesome Claude Skills 中文版",
+  description: "中文 Claude Skills 高质量索引、实战场景与落地指南",
+  lang: "zh-CN",
+  cleanUrls: true,
+  lastUpdated: true,
 
   ignoreDeadLinks: [
     /\.\.\/AGENTS/,
@@ -22,45 +24,50 @@ export default withMermaid(defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
-      { text: '技能列表', link: '/skills' },
-      { text: '入门指南', link: '/getting-started' },
-      { text: '贡献指南', link: '/contribute' },
-      { text: '资源', link: '/resources' },
-      { text: '关于', link: '/about' },
+      { text: "首页", link: "/" },
+      { text: "实战手册", link: "/playbooks", activeMatch: "/playbooks" },
+      { text: "技能索引", link: "/skills", activeMatch: "/skills" },
+      { text: "入门指南", link: "/getting-started", activeMatch: "/getting-started" },
+      { text: "资源导航", link: "/resources", activeMatch: "/resources" },
+      { text: "贡献", link: "/contribute", activeMatch: "/contribute" },
+      { text: "关于", link: "/about", activeMatch: "/about" },
     ],
-
-    sidebar: [
-      {
-        text: '指南',
-        items: [
-          { text: '入门指南', link: '/getting-started' },
-          { text: '贡献指南', link: '/contribute' },
-        ],
-      },
-      {
-        text: '参考',
-        items: [
-          { text: '技能列表', link: '/skills' },
-          { text: '资源', link: '/resources' },
-          { text: '关于', link: '/about' },
-        ],
-      },
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/LessUp/awesome-claude-skills-zh' },
-    ],
-
-    outline: [2, 3],
-
-    search: {
-      provider: 'local',
+    sidebar: {
+      "/": [
+        {
+          text: "开始",
+          items: [
+            { text: "首页", link: "/" },
+            { text: "入门指南", link: "/getting-started" },
+          ],
+        },
+        {
+          text: "核心内容",
+          items: [
+            { text: "实战手册", link: "/playbooks" },
+            { text: "技能索引", link: "/skills" },
+            { text: "资源导航", link: "/resources" },
+          ],
+        },
+        {
+          text: "社区与维护",
+          items: [
+            { text: "贡献指南", link: "/contribute" },
+            { text: "关于项目", link: "/about" },
+          ],
+        },
+      ],
     },
-
+    socialLinks: [
+      { icon: "github", link: "https://github.com/LessUp/awesome-claude-skills-zh" },
+    ],
+    outline: [2, 3],
+    search: {
+      provider: "local",
+    },
     footer: {
-      message: '采用 Apache License 2.0 许可证',
-      copyright: '由 LessUp 维护 | 原项目: ComposioQ/awesome-claude-skills',
+      message: "文档内容遵循 Apache License 2.0",
+      copyright: "Maintained by LessUp · Based on ComposioQ/awesome-claude-skills",
     },
   },
 
