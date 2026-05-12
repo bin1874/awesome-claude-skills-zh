@@ -44,10 +44,7 @@ Claude Code 是 Anthropic 推出的终端应用，让你能够在本地开发环
 ### 安装 Claude Code
 
 ```bash
-# macOS (使用 Homebrew)
-brew install claude-code
-
-# 或使用 npm
+# 使用 npm 安装
 npm install -g @anthropic-ai/claude-code
 
 # 启动
@@ -118,7 +115,7 @@ import anthropic
 client = anthropic.Anthropic(api_key="your-api-key")
 
 response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
+    model="claude-sonnet-4-20250514",
     skills=["skill-id-here"],  # 指定要使用的技能
     messages=[
         {"role": "user", "content": "您的提示内容"}

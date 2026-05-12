@@ -152,7 +152,9 @@ Claude 如何执行此技能的详细说明
 
 ```
 docs/
-├── _config.yml         # Jekyll 配置
+├── .vitepress/         # VitePress 配置和主题
+│   ├── config.ts       # 站点配置
+│   └── theme/          # 自定义主题和样式
 ├── index.md            # 首页
 ├── skills.md           # 技能列表
 ├── getting-started.md  # 入门指南

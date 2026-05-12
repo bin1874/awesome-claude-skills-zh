@@ -40,7 +40,7 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准化的方
 
 <div class="stats">
   <div class="stat-item">
-    <div class="stat-number">30+</div>
+    <div class="stat-number">860+</div>
     <div class="stat-label">精选技能</div>
   </div>
   <div class="stat-item">
@@ -126,44 +126,9 @@ Skills 让 Claude 能够在所有 Claude 平台上以可重复、标准化的方
 | **File Organizer** | 智能组织文件和文件夹 | 生产力 |
 | **Connect Apps** | 连接 500+ 应用执行真实操作 | 应用自动化 |
 
-## 快速开始
-
-### 在 Claude Code 中使用技能
-
-```bash
-# 1. 创建技能目录
-mkdir -p ~/.config/claude-code/skills/
-
-# 2. 复制技能文件
-cp -r skill-name ~/.config/claude-code/skills/
-
-# 3. 启动 Claude Code
-claude
-
-# 技能自动加载并在相关时激活
-```
-
-### 连接应用到 Claude
-
-通过 **connect-apps** 插件，让 Claude 执行真实操作：
-
-```bash
-# 安装插件
-claude --plugin-dir ./connect-apps-plugin
-
-# 运行设置
-/connect-apps:setup
-```
-
-在 [platform.composio.dev](https://platform.composio.dev) 获取免费 API 密钥，让 Claude 能够发送邮件、创建 Issue、发布到 Slack 等。
-
-## 关于本翻译
-
-本项目是 [awesome-claude-skills](https://github.com/ComposioQ/awesome-claude-skills) 的中文翻译版本。
-
-- **原项目**: [ComposioQ/awesome-claude-skills](https://github.com/ComposioQ/awesome-claude-skills)
-- **许可证**: Apache License 2.0
-- **翻译目的**: 为中文开发者社区提供 Claude Skills 的本地化资源
-- **贡献**: 欢迎提交 Issue 和 PR 改进翻译
-
-完整内容和所有技能详情请查看 [GitHub 仓库](https://github.com/LessUp/awesome-claude-skills-zh)。
+<div class="cta-section">
+  <h3>开始使用 Claude Skills</h3>
+  <p>浏览技能列表或查看入门指南，立即提升你的 Claude 使用体验</p>
+  <a href="/getting-started" class="cta-button">入门指南</a>
+  <a href="/skills" class="cta-button secondary">浏览全部技能</a>
+</div>

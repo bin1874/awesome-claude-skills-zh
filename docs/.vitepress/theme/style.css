@@ -12,6 +12,18 @@
   --vp-c-brand-soft: rgba(245, 158, 11, 0.16);
 }
 
+/* Card entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Hero section styles */
 .VPHero .name {
   font-size: 2.5rem !important;
@@ -34,6 +46,7 @@
   border-radius: 8px;
   padding: 1rem;
   transition: all 0.2s;
+  animation: fadeInUp 0.4s ease both;
 }
 
 .skill-card:hover {
@@ -81,7 +94,10 @@
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--vp-c-brand-1);
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .stat-label {
@@ -102,6 +118,12 @@
   padding: 1.25rem;
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .feature-card h3 {
@@ -201,6 +223,25 @@
 
 .cta-button.secondary:hover {
   background: var(--vp-c-bg-mute);
+}
+
+/* Dark mode enhancements */
+.dark .skill-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.dark .skill-card:hover {
+  border-color: var(--vp-c-brand-2);
+  background: rgba(245, 158, 11, 0.04);
+}
+
+.dark .feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .stat-item {
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Responsive */

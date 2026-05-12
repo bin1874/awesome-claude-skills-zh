@@ -32,6 +32,10 @@ title: 技能列表
     <p class="skill-desc">将 Markdown 文档转换为专业的 EPUB 电子书</p>
     <p class="skill-author">@smerchek</p>
   </div>
+  <div class="skill-card">
+    <a href="https://github.com/LessUp/awesome-claude-skills-zh/tree/main/document-skills" class="skill-name">Document Skills</a>
+    <p class="skill-desc">综合文档处理技能包，覆盖 Word、PDF、Excel 等格式</p>
+  </div>
 </div>
 
 ---
@@ -159,6 +163,10 @@ title: 技能列表
   <div class="skill-card">
     <a href="https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing" class="skill-name" target="_blank">root-cause-tracing</a>
     <p class="skill-desc">追溯错误发生的原始触发点</p>
+  </div>
+  <div class="skill-card">
+    <a href="https://github.com/LessUp/awesome-claude-skills-zh/tree/main/developer-growth-analysis" class="skill-name">Developer Growth Analysis</a>
+    <p class="skill-desc">分析开发者技能成长路径和学习建议</p>
   </div>
 </div>
 
@@ -329,6 +337,10 @@ title: 技能列表
     <a href="https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing" class="skill-name" target="_blank">test-fixing</a>
     <p class="skill-desc">检测失败测试并提出修复</p>
   </div>
+  <div class="skill-card">
+    <a href="https://github.com/LessUp/awesome-claude-skills-zh/tree/main/skill-share" class="skill-name">Skill Share</a>
+    <p class="skill-desc">分享和分发 Claude Skills 给团队成员</p>
+  </div>
 </div>
 
 ---
@@ -359,7 +371,14 @@ title: 技能列表
 
 ## 🔌 应用自动化 (Composio)
 
-通过 [Composio](https://composio.dev) 为 78 个 SaaS 应用提供的预构建工作流技能。
+<div class="skills-grid">
+  <div class="skill-card">
+    <a href="https://github.com/LessUp/awesome-claude-skills-zh/tree/main/connect-apps" class="skill-name">Connect Apps</a>
+    <p class="skill-desc">连接 500+ 应用，让 Claude 执行真实操作（发邮件、创建 Issue 等）</p>
+  </div>
+</div>
+
+通过 [Composio](https://composio.dev) 提供的 832 个 SaaS 应用自动化技能。
 
 | 类别 | 应用 |
 |:---|:---|
