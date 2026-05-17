@@ -12,8 +12,14 @@ const base = rawBase
 export default withMermaid(defineConfig({
   base,
   title: 'Awesome Claude Skills 中文版',
-  description: '中文 Claude Skills 高质量索引、实战场景与落地指南',
+  description: 'AI Agent 技能系统 · 技术白皮书',
   lang: 'zh-CN',
+
+  head: [
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap', rel: 'stylesheet' }],
+  ],
 
   ignoreDeadLinks: [
     /\.\.\/AGENTS/,
@@ -21,35 +27,60 @@ export default withMermaid(defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '指南', link: '/guides/getting-started', activeMatch: '/guides/' },
-      { text: '技能索引', link: '/skills/', activeMatch: '/skills/' },
-      { text: '实战手册', link: '/playbooks/', activeMatch: '/playbooks/' },
-      { text: '资源导航', link: '/resources' },
-      { text: '贡献', link: '/contribute' },
-      { text: '关于', link: '/about' },
+      { text: '理论', link: '/theory/', activeMatch: '/theory/' },
+      { text: '架构', link: '/architecture/', activeMatch: '/architecture/' },
+      { text: '技能', link: '/skills/', activeMatch: '/skills/' },
+      { text: '实践', link: '/practice/', activeMatch: '/practice/' },
+      { text: '参考', link: '/reference/', activeMatch: '/reference/' },
     ],
     sidebar: {
-      '/guides/': [
+      '/theory/': [
         {
-          text: '指南',
+          text: '理论',
           items: [
-            { text: '入门指南', link: '/guides/getting-started' },
+            { text: '概述', link: '/theory/' },
+            { text: '智能体架构', link: '/theory/agent-arch' },
+            { text: '提示工程', link: '/theory/prompt-eng' },
+            { text: 'Skills 系统', link: '/theory/skill-system' },
+          ],
+        },
+      ],
+      '/architecture/': [
+        {
+          text: '架构',
+          items: [
+            { text: '架构总览', link: '/architecture/' },
+            { text: '渐进式加载', link: '/architecture/loading' },
+            { text: '执行引擎', link: '/architecture/execution' },
           ],
         },
       ],
       '/skills/': [
         {
-          text: '技能',
+          text: '技能索引',
           items: [
-            { text: '技能索引', link: '/skills/' },
+            { text: '概览', link: '/skills/' },
           ],
         },
       ],
-      '/playbooks/': [
+      '/practice/': [
         {
-          text: '实战手册',
+          text: '实践',
           items: [
-            { text: '概览', link: '/playbooks/' },
+            { text: '概述', link: '/practice/' },
+            { text: '入门指南', link: '/practice/getting-started' },
+            { text: '实战手册', link: '/practice/playbooks' },
+          ],
+        },
+      ],
+      '/reference/': [
+        {
+          text: '参考资料',
+          items: [
+            { text: '概览', link: '/reference/' },
+            { text: '参考文献', link: '/reference/bibliography' },
+            { text: '相关项目', link: '/reference/related' },
+            { text: '架构决策', link: '/reference/adr' },
           ],
         },
       ],
@@ -60,8 +91,8 @@ export default withMermaid(defineConfig({
       { icon: 'github', link: 'https://github.com/LessUp/awesome-claude-skills-zh' },
     ],
     footer: {
-      message: '文档内容遵循 Apache License 2.0',
-      copyright: 'Maintained by LessUp · Based on ComposioQ/awesome-claude-skills',
+      message: 'Apache License 2.0',
+      copyright: 'Maintained by LessUp',
     },
   },
 

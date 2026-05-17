@@ -1,104 +1,53 @@
 ---
-layout: home
+layout: doc
 ---
 
-<div class="home-header">
-  <div class="home-header-left">
-    <div class="home-logo">AS</div>
-    <div>
-      <span class="home-title">Awesome Claude Skills</span>
-      <span class="home-subtitle">中文版</span>
-    </div>
-  </div>
-  <div class="home-nav">
-    <a href="./guides/getting-started">入门指南</a>
-    <a href="./skills/">技能索引</a>
-    <a href="https://github.com/LessUp/awesome-claude-skills-zh">GitHub</a>
-  </div>
-</div>
+<Abs title="摘要" :keywords="['Claude Skills', 'AI Agent', '提示工程', '智能体架构', '渐进式加载']">
+Awesome Claude Skills 中文版是一个面向高级开发者和 AI Agent 研究者的技术白皮书站点。本文档系统阐述 Claude Skills 的理论基础、系统架构与实践应用。我们从智能体架构理论出发，深入分析提示工程原理、Skills 系统的三级渐进加载机制，以及跨平台执行引擎的设计与实现。本站点收录 70+ 精选技能，覆盖文档处理、开发工具、数据分析等 10 个核心领域，为构建生产级 AI 应用提供可复用的技术组件。
+</Abs>
 
-<div class="home-intro-row">
-  <div class="home-intro">
-    面向 Claude.ai、Claude Code、Claude API 的中文落地资料站，聚焦真实场景、组合策略与执行模板。
-  </div>
-  <div class="home-stats">
-    <span><strong>70</strong> 精选技能</span>
-    <span><strong>10</strong> 场景分类</span>
-    <span><strong>27</strong> 本地可用</span>
-  </div>
-</div>
+## 核心数据
 
-## 快速开始
+| 指标 | 数值 |
+|:---|:---|
+| 本地技能 | 29 |
+| 外部技能 | 11 |
+| Composio 技能 | 832 |
+| 总计 | 872 |
+| 分类领域 | 10 |
+| Composio 应用 | 78 |
 
-<div class="feature-map">
-  <div class="feature-card">
-    <div class="feature-card-title">📚 入门指南</div>
-    <div class="feature-card-desc">
-      了解 Claude Skills 的基本概念、安装方式和快速上手步骤。
-    </div>
-    <div class="feature-tags">
-      <a href="./guides/getting-started" class="feature-tag">开始使用</a>
-    </div>
-  </div>
+## 文档结构
 
-  <div class="feature-card">
-    <div class="feature-card-title">🔍 技能索引</div>
-    <div class="feature-card-desc">
-      浏览按场景分类的技能列表，找到适合你任务的工具。
-    </div>
-    <div class="feature-tags">
-      <a href="./skills/" class="feature-tag">浏览技能</a>
-    </div>
-  </div>
+本站采用递进式内容组织，引导读者从理论到实践：
 
-  <div class="feature-card">
-    <div class="feature-card-title">📖 实战手册</div>
-    <div class="feature-card-desc">
-      按任务场景组织的执行路径和技能组合策略。
-    </div>
-    <div class="feature-tags">
-      <a href="./playbooks/" class="feature-tag">查看手册</a>
-    </div>
-  </div>
+1. **理论** — AI Agent 架构理论、提示工程原理、Skills 系统设计
+2. **架构** — 系统架构总览、渐进式加载机制、执行引擎
+3. **技能** — 按领域分类的技能索引
+4. **实践** — 入门指南与实战手册
+5. **参考** — 参考文献、相关项目、架构决策记录
 
-  <div class="feature-card">
-    <div class="feature-card-title">📄 文档处理</div>
-    <div class="feature-card-desc">
-      文档转换、内容提取、格式化等技能。
-    </div>
-    <div class="feature-tags">
-      <a href="./skills/#documents" class="feature-tag">查看分类</a>
-    </div>
-  </div>
+## 快速导航
 
-  <div class="feature-card">
-    <div class="feature-card-title">💻 开发工具</div>
-    <div class="feature-card-desc">
-      代码生成、测试、调试等开发相关技能。
-    </div>
-    <div class="feature-tags">
-      <a href="./skills/#development" class="feature-tag">查看分类</a>
-    </div>
-  </div>
+| 目标 | 推荐入口 |
+|:---|:---|
+| 理解 Skills 理论基础 | [智能体架构](/theory/agent-arch) |
+| 了解系统设计原理 | [架构总览](/architecture/) |
+| 查找特定技能 | [技能索引](/skills/) |
+| 快速上手使用 | [入门指南](/practice/getting-started) |
+| 解决实际问题 | [实战手册](/practice/playbooks) |
+| 深入研究参考 | [参考文献](/reference/bibliography) |
 
-  <div class="feature-card">
-    <div class="feature-card-title">🔌 自动化</div>
-    <div class="feature-card-desc">
-      Composio 应用自动化、工作流集成。
-    </div>
-    <div class="feature-tags">
-      <a href="./skills/#automation-composio" class="feature-tag">查看分类</a>
-    </div>
-  </div>
-</div>
+## 引用本文档
 
-<div class="quick-start">
-  <div class="quick-start-title">如何使用技能</div>
-  <div class="quick-start-content">
-    <p>将技能目录复制到你的项目 <code>.claude/skills/</code> 目录下，Claude Code 会自动识别并加载。</p>
-    <div class="command-block">
-      <code>cp -r skill-name ~/.claude/skills/</code>
-    </div>
-    <p>或在项目根目录创建 <code>.claude/skills/</code> 目录，放入技能文件夹。</p>
-  </div>
-</div>
+如需在学术文章中引用本站内容，建议格式：
+
+```bibtex
+@misc{awesome-claude-skills-zh,
+  title     = {Awesome Claude Skills 中文版},
+  author    = {LessUp},
+  year      = {2026},
+  howpublished = {\url{https://lessup.github.io/awesome-claude-skills-zh/}},
+  note      = {Accessed: 2026-05-17}
+}
+```

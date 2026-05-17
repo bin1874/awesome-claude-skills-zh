@@ -4,7 +4,9 @@ title: 技能索引
 
 # 技能索引
 
-这一页展示按场景分类的技能列表。如果你是第一次使用，建议先看 [实战手册](/playbooks/) 里的任务路径，再回到这里锁定具体技能。
+<Abs title="概述" :keywords="['技能索引', '文档处理', '开发工具', '数据分析', '自动化']">
+本页展示按场景分类的技能列表。如果你是第一次使用，建议先看 [实战手册](/practice/playbooks) 里的任务路径，再回到这里锁定具体技能。本站收录 70+ 精选技能，覆盖 10 个核心领域。
+</Abs>
 
 ## 分类导航
 
@@ -26,7 +28,7 @@ title: 技能索引
 
 | 技能 | 描述 | 来源 |
 |:---|:---|:---|
-| Document Skills | 文档处理技能合集 | [本地](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/document-skills) |
+| Document Skills | 文档处理技能合集，支持 PDF、Word、Excel、PowerPoint | [本地](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/document-skills) |
 
 ## 开发工具 {#development}
 
@@ -96,12 +98,12 @@ Composio 提供了 **830+ 个应用自动化技能**，涵盖：
 - **存储**: Google Drive, Dropbox, OneDrive
 - **日历**: Google Calendar, Calendly
 
-[查看完整 Composio 技能列表 →](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/composio-skills)
+[查看完整 Composio 技能列表](https://github.com/LessUp/awesome-claude-skills-zh/tree/master/composio-skills)
 
 ---
 
 ## 继续深入
 
-- 不确定选哪个技能？看 [实战手册](/playbooks/)
-- 需要安装帮助？看 [入门指南](/guides/getting-started)
+- 不确定选哪个技能？看 [实战手册](/practice/playbooks)
+- 需要安装帮助？看 [入门指南](/practice/getting-started)
 - 想贡献技能？看 [贡献指南](/contribute)
