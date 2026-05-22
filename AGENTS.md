@@ -20,17 +20,16 @@ awesome-claude-skills-zh/
 ├── .github/workflows/           # GitHub Actions
 │   └── pages.yml               # GitHub Pages 自动部署
 │
-├── docs/                        # Jekyll 文档站点
-│   ├── _config.yml             # Jekyll 配置
-│   ├── Gemfile                 # Ruby 依赖
-│   ├── _sass/                  # 自定义样式
-│   ├── assets/                 # 静态资源
+├── docs/                        # VitePress 文档站点
+│   ├── .vitepress/             # VitePress 配置
+│   │   └── config.ts           # 站点配置
+│   ├── package.json            # Node.js 依赖
 │   ├── index.md                # 首页
-│   ├── skills.md               # 技能列表页
-│   ├── getting-started.md      # 入门指南
-│   ├── contribute.md           # 贡献说明
-│   ├── about.md                # 关于页面
-│   └── resources.md            # 资源页面
+│   ├── skills/                 # 技能索引
+│   ├── practice/               # 实践指南
+│   ├── theory/                 # 理论基础
+│   ├── architecture/           # 系统架构
+│   └── reference/              # 参考资料
 │
 └── [skill-name]/                # 各个技能目录（30+ 个）
     ├── SKILL.md                # 技能定义（必需）
@@ -47,10 +46,10 @@ awesome-claude-skills-zh/
 - **YAML** - 技能元数据 frontmatter
 
 ### 文档站点
-- **Jekyll** - 静态站点生成器
+- **VitePress** - 静态站点生成器
 - **GitHub Pages** - 托管和部署
-- **just-the-docs** - Jekyll 主题
-- **Ruby/Gem** - 依赖管理
+- **Node.js/npm** - 依赖管理
+- **Mermaid** - 图表支持
 
 ### 工具链
 - **Git** - 版本控制
@@ -114,7 +113,7 @@ Claude 执行此技能的详细指导...
 - 技能说明面向 Claude（AI），而非最终用户
 - 保持简洁，避免冗长解释
 
-## 文档站点（Jekyll）
+## 文档站点（VitePress）
 
 ### 本地开发
 
@@ -123,27 +122,27 @@ Claude 执行此技能的详细指导...
 cd docs
 
 # 安装依赖
-bundle install
+npm install
 
-# 启动本地服务器
-bundle exec jekyll serve
+# 启动开发服务器
+npm run dev
 
-# 访问 http://localhost:4000
+# 访问 http://localhost:5173
 ```
 
 ### 文件组织
 
-- `_config.yml` - 站点配置、导航、主题设置
-- `Gemfile` - Ruby gem 依赖
-- `_sass/` - SCSS 样式覆盖
-- `assets/` - 图片、CSS、字体等静态资源
+- `.vitepress/config.ts` - 站点配置、导航、主题设置
+- `package.json` - Node.js 依赖
+- `.vitepress/theme/` - 自定义主题和组件
+- `.vitepress/theme/style.css` - 自定义样式
 - Markdown 页面使用 YAML frontmatter 定义布局
 
 ### 自动部署
 
 GitHub Actions 工作流 (`.github/workflows/pages.yml`)：
 - **触发条件**：`docs/**` 目录或工作流文件变更时
-- **构建**：使用 Jekyll 构建静态站点
+- **构建**：使用 VitePress 构建静态站点
 - **部署**：自动部署到 GitHub Pages
 
 无需手动干预部署流程。
@@ -214,7 +213,7 @@ EOF
 ```bash
 cd docs
 # 编辑 .md 文件
-bundle exec jekyll serve  # 本地预览
+npm run dev  # 本地预览
 # 推送到 main 分支自动部署
 ```
 

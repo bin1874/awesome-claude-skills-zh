@@ -26,7 +26,7 @@ title: 架构决策记录
 - 正面: 文档更新只需编辑 Markdown，自动部署，无服务器成本
 - 负面: 需要 Node.js 构建环境
 
-详见 [ADR-0001](/adr/0001-use-jekyll-for-docs)
+详见 [ADR-0001](/adr/0001-use-vitepress-for-docs)
 
 ---
 

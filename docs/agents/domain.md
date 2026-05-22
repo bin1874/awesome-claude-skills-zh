@@ -19,7 +19,7 @@ Skills that read domain docs follow these rules:
 
 ADRs in `docs/adr/` should follow this naming convention:
 
-- `NNNN-title-with-dashes.md` (e.g., `0001-use-jekyll-for-docs.md`)
+- `NNNN-title-with-dashes.md` (e.g., `0001-use-vitepress-for-docs.md`)
 - Include: Status, Context, Decision, Consequences
 
 ## Note
