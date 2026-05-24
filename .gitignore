@@ -23,4 +23,7 @@ __pycache__/
 
 # Node.js
 node_modules/
+
+# AI tool configs
+.devin/
 .worktrees/
