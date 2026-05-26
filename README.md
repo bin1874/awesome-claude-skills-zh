@@ -160,6 +160,7 @@ Skills 不是 MCP 服务器，也不是工具。MCP 定义智能体如何连接�
 
 ### 商业与营销
 
+- [Before You Build](./before-you-build/) - 在 AI 开始写代码前,审查产品和功能想法的需求、分发、定价、留存和失败模式。*作者 [@bin1874](https://github.com/bin1874)*
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59 个技能库,涵盖完整的网站生命周期:品牌、设计、内容、SEO、开发、运维、增长和研究。技术栈无关,带有 Ahrefs MCP 驱动的 SEO 审计套件。包含编写自己技能的元技能。*作者 [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - 将 Anthropic 官方品牌颜色和字体应用于 artifacts,确保一致的视觉识别和专业设计标准。
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - 从广告库中提取和分析竞争对手的广告,了解引起共鸣的消息传递和创意方法。
